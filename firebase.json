@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "vogaadv",
+    "public": "_site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
