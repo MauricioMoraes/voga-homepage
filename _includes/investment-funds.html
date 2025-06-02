@@ -1,0 +1,341 @@
+<section id="investment" class="investment-funds-section py-6 bg-gradient-light position-relative overflow-hidden">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7 mx-auto text-center">
+        <span class="badge bg-primary bg-opacity-10 text-primary mb-3 py-2 px-3 rounded-pill">Fundos de Investimento</span>
+        <h2 class="section-title mb-3">Diversifique sua carteira com <span class="text-gradient">Ativos Judiciais</span></h2>
+        <p class="section-subtitle">A Rhilo Investimentos desenvolve fundos de investimento especializados em ativos judiciais com retornos superiores entre 15% e 25% a.a. e baixa correlação com o mercado tradicional</p>
+      </div>
+    </div>
+
+    <!-- Investment Performance Chart -->
+    <div class="row mb-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h3 class="h5 mb-0">Performance Comparativa (%)</h3>
+              <div class="d-flex gap-3">
+                <div class="d-flex align-items-center">
+                  <span class="legend-color me-2" style="width: 12px; height: 12px; background-color: #4A6FFF; border-radius: 2px;"></span>
+                  <span class="small text-secondary">Rhilo FIDC Judicial</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="legend-color me-2" style="width: 12px; height: 12px; background-color: #10B981; border-radius: 2px;"></span>
+                  <span class="small text-secondary">Ibovespa</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="legend-color me-2" style="width: 12px; height: 12px; background-color: #6C757D; border-radius: 2px;"></span>
+                  <span class="small text-secondary">CDI</span>
+                </div>
+              </div>
+            </div>
+            <div style="height: 250px;">
+              <canvas id="investmentPerformanceChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="fas fa-search-dollar fa-fw"></i>
+              </div>
+              <h3 class="card-title h5 mb-0">Avaliação Especializada</h3>
+            </div>
+            <p class="card-text">Nossa equipe considera múltiplos fatores na precificação dos ativos: estágio processual, risco jurisdicional, entidade devedora, prazo estimado e histórico de pagamentos do devedor.</p>
+            <hr class="my-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2"></i>
+              <p class="small mb-0">Precificação justa baseada em análise criteriosa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="fas fa-chart-pie fa-fw"></i>
+              </div>
+              <h3 class="card-title h5 mb-0">Diversificação Estratégica</h3>
+            </div>
+            <p class="card-text">Diversificamos nossos fundos por tipo de ativo judicial, jurisdição, entidade devedora e estágio processual, minimizando riscos e maximizando estabilidade dos retornos ao longo do tempo.</p>
+            <hr class="my-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2"></i>
+              <p class="small mb-0">Proteção contra volatilidade de mercado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="fas fa-chart-line fa-fw"></i>
+              </div>
+              <h3 class="card-title h5 mb-0">Retornos Superiores</h3>
+            </div>
+            <p class="card-text">Nossos fundos em ativos judiciais oferecem rentabilidade anual entre 15% e 25%, significativamente superior aos investimentos tradicionais, com baixa correlação com o mercado de ações.</p>
+            <hr class="my-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2"></i>
+              <p class="small mb-0">Performance consistente acima do mercado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="fas fa-balance-scale fa-fw"></i>
+              </div>
+              <h3 class="card-title h5 mb-0">Expertise Jurídica</h3>
+            </div>
+            <p class="card-text">Nossa equipe de especialistas em direito processual e constitucional realiza rigorosa avaliação de cada ativo, determinando com precisão o estágio, riscos e potencial de cada investimento.</p>
+            <hr class="my-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2"></i>
+              <p class="small mb-0">Due diligence jurídica completa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="fas fa-shield-alt fa-fw"></i>
+              </div>
+              <h3 class="card-title h5 mb-0">Mitigação de Riscos</h3>
+            </div>
+            <p class="card-text">Implementamos metodologia avançada de gestão de riscos com análise de cenários, estresse de carteira e monitoramento constante de alterações legislativas e jurisprudenciais que impactam os ativos.</p>
+            <hr class="my-3">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2"></i>
+              <p class="small mb-0">Controle contínuo de fatores de risco</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 shadow-sm highlight-card" style="border-left: 5px solid #4A6FFF !important;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="feature-icon me-3">
+                <i class="fas fa-file-contract fa-fw"></i>
+              </div>
+              <h3 class="card-title h5 mb-0">FIDC Rhilo Judicial</h3>
+            </div>
+            <p class="card-text">Nosso Fundo de Investimento em Direitos Creditórios (FIDC) especializado em ativos judiciais permite aos investidores acessar essa classe de ativos a partir de R$50.000, com liquidez semestral.</p>
+            <hr class="my-3">
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex align-items-center mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <p class="small mb-0">Rentabilidade alvo: CDI + 8% a.a.</p>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <p class="small mb-0">Investimento mínimo: R$50.000</p>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <p class="small mb-0">Liquidez semestral</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Investment Process Timeline -->
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="card border-0 rounded-4 shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <h3 class="h4 mb-4 text-center">Nosso Processo de Investimento</h3>
+            
+            <div class="investment-timeline position-relative">
+              <!-- Timeline Line -->
+              <div class="timeline-line position-absolute" style="top: 25px; bottom: 0; left: 18px; width: 2px; background-color: #e9ecef;"></div>
+              
+              <!-- Timeline Steps -->
+              <div class="timeline-step d-flex mb-4">
+                <div class="timeline-icon rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; position: relative; z-index: 1;">
+                  <i class="fas fa-search text-white small"></i>
+                </div>
+                <div class="timeline-content ms-3">
+                  <h4 class="h6 mb-1">Prospecção de Ativos</h4>
+                  <p class="small text-secondary mb-0">Identificamos oportunidades de investimento em créditos judiciais através de nossa rede de parceiros e escritórios de advocacia.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-step d-flex mb-4">
+                <div class="timeline-icon rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; position: relative; z-index: 1;">
+                  <i class="fas fa-gavel text-white small"></i>
+                </div>
+                <div class="timeline-content ms-3">
+                  <h4 class="h6 mb-1">Análise Jurídica</h4>
+                  <p class="small text-secondary mb-0">Nossa equipe especializada realiza detalhada análise jurídica, verificando o estágio processual, risco jurisdicional e solidez do crédito.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-step d-flex mb-4">
+                <div class="timeline-icon rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; position: relative; z-index: 1;">
+                  <i class="fas fa-calculator text-white small"></i>
+                </div>
+                <div class="timeline-content ms-3">
+                  <h4 class="h6 mb-1">Precificação e Estruturação</h4>
+                  <p class="small text-secondary mb-0">Aplicamos nossa metodologia proprietária para precificar o ativo, considerando prazo estimado, risco e deságio adequado.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-step d-flex mb-4">
+                <div class="timeline-icon rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; position: relative; z-index: 1;">
+                  <i class="fas fa-handshake text-white small"></i>
+                </div>
+                <div class="timeline-content ms-3">
+                  <h4 class="h6 mb-1">Aquisição e Cessão</h4>
+                  <p class="small text-secondary mb-0">Formalizamos a aquisição do crédito judicial através de contrato de cessão, garantindo segurança jurídica para todas as partes.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-step d-flex">
+                <div class="timeline-icon rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; position: relative; z-index: 1;">
+                  <i class="fas fa-chart-line text-white small"></i>
+                </div>
+                <div class="timeline-content ms-3">
+                  <h4 class="h6 mb-1">Gestão e Monitoramento</h4>
+                  <p class="small text-secondary mb-0">Realizamos acompanhamento contínuo do processo judicial, gerenciando riscos e maximizando o retorno para nossos investidores.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="cta-card bg-primary bg-opacity-10 p-4 p-lg-5 rounded-4 position-relative overflow-hidden">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <h3 class="h4 text-primary mb-3">Pronto para diversificar sua carteira com ativos judiciais?</h3>
+              <p class="mb-0">Converse com nossos especialistas e descubra como os fundos da Rhilo Investimentos podem complementar sua estratégia de investimentos com retornos diferenciados.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-primary btn-lg rounded-pill">Quero Investir</a>
+            </div>
+          </div>
+          
+          <!-- Decorative Elements -->
+          <div class="position-absolute end-0 bottom-0 d-none d-lg-block">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.1">
+              <path fill="#6366F1" d="M39.5,-65.3C54.3,-60.5,71.6,-55.8,79.8,-44.6C88.1,-33.4,87.3,-16.7,84.1,-1.8C80.9,13,75.5,26,67.4,36.6C59.3,47.2,48.7,55.3,37,61.8C25.4,68.2,12.7,72.9,-0.2,73.2C-13.1,73.6,-26.1,69.5,-37.4,62.5C-48.6,55.4,-58,45.4,-65.8,33.6C-73.6,21.7,-79.7,7.9,-78.9,-5.3C-78,-18.6,-70.2,-31.2,-60.1,-38.7C-50,-46.2,-37.5,-48.7,-26.7,-55.9C-15.9,-63.2,-7.9,-75.3,1.9,-78.6C11.8,-81.9,23.6,-76.4,39.5,-65.3Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Background Decorations -->
+  <div class="position-absolute top-0 end-0 d-none d-lg-block">
+    <svg width="600" height="600" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.05; transform: rotate(45deg);">
+      <path fill="#10B981" d="M29.5,-51.2C37.9,-46.1,44.3,-36.8,50,-27C55.7,-17.1,60.8,-6.6,61.3,4.3C61.9,15.3,58,26.7,51.1,36.6C44.2,46.4,34.5,54.7,23.3,59.3C12.2,63.9,-0.3,64.7,-13.2,62.8C-26,60.9,-39.3,56.2,-49,47.2C-58.8,38.2,-65.1,24.9,-67.8,10.9C-70.5,-3.2,-69.7,-18,-63.5,-30.2C-57.2,-42.5,-45.5,-52.2,-33.3,-55.6C-21,-59,-10.5,-56.1,0.2,-56.5C11,-56.9,21.1,-56.3,29.5,-51.2Z" transform="translate(100 100)" />
+    </svg>
+  </div>
+</section>
+
+<!-- Add Chart.js -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Investment Performance Chart
+    const ctx = document.getElementById('investmentPerformanceChart').getContext('2d');
+    const performanceChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+        datasets: [{
+          label: 'Rhilo FIDC',
+          data: [102, 104, 107, 109, 112, 115, 118, 120, 123, 126, 129, 132],
+          borderColor: '#4A6FFF',
+          backgroundColor: 'rgba(74, 111, 255, 0.05)',
+          borderWidth: 2,
+          tension: 0.4,
+          fill: true
+        },
+        {
+          label: 'Ibovespa',
+          data: [101, 99, 103, 100, 105, 102, 106, 104, 108, 107, 110, 112],
+          borderColor: '#10B981',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          tension: 0.4,
+          fill: false
+        },
+        {
+          label: 'CDI',
+          data: [100.5, 101, 101.5, 102, 102.5, 103, 103.5, 104, 104.5, 105, 105.5, 106],
+          borderColor: '#6C757D',
+          backgroundColor: 'transparent',
+          borderWidth: 2,
+          tension: 0.4,
+          fill: false,
+          borderDash: [5, 5]
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: false,
+            min: 95,
+            grid: {
+              drawBorder: false
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            }
+          }
+        },
+        elements: {
+          point: {
+            radius: 2,
+            hoverRadius: 5
+          }
+        }
+      }
+    });
+  });
+</script>

@@ -1,0 +1,79 @@
+title: Voga - Ecossistema do Cálculo Jurídico
+email: contato@voga.adv.br
+description: >-
+  Ecossistema do Cálculo Jurídico que agrupa as várias soluções do grupo para o mercado jurídico, 
+  incorporando tecnologia e IA no mundo jurídico e gerando alto valor para os advogados que usam as soluções da Voga.
+baseurl: ""
+url: "https://voga.adv.br"
+timezone: America/Sao_Paulo
+locale: pt_BR
+future: true
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Collections
+collections:
+  authors:
+    output: true
+    permalink: /autores/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "admin"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+  - DESIGN-REFERENCE.md
+  - Dockerfile
+  - docker-compose.yml
+  - start.sh
+  - test.sh
+  - fetch_migalhas.sh
+  - fetch_articles.rb
+  - extract_content.rb
+  - .jekyll-cache
+  - .sass-cache
+  - .bundle
+  - .github
+  - .ruby-version
+  - .node-version
+  - spec
+  - Rakefile
+  - vercel.json
+  - docs/
+  - .env

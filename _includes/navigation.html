@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <div class="ativo-logo dark">
+        <span class="logo-text">Ativo<span class="logo-accent">Ju</span>dicial<span class="logo-dot">.</span></span>
+        <span class="logo-underline"></span>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a class="nav-link{% if page.url == item.link %} active{% endif %}" href="{{ item.link | relative_url }}">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill ms-lg-3" href="#contact">Fale Conosco</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="navbar-spacer"></div>

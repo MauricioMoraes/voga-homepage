@@ -1,0 +1,55 @@
+---
+layout: default
+title: Autores • Especialistas em Ativos Judiciais
+permalink: /autores/
+---
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h1 class="mb-4">{{ page.title }}</h1>
+      <p class="lead mb-5">Conheça nossa equipe de especialistas e autores que compartilham conhecimento sobre ativos judiciais, investimentos e inovação no setor jurídico.</p>
+      
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for author in site.authors %}
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="author-image me-3">
+                    {% if author.avatar %}
+                      <img src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}" class="rounded-circle" width="80" height="80">
+                    {% else %}
+                      <img src="{{ '/assets/images/avatar-default.jpg' | relative_url }}" alt="{{ author.display_name }}" class="rounded-circle" width="80" height="80">
+                    {% endif %}
+                  </div>
+                  <div>
+                    <h2 class="h4 mb-1">{{ author.display_name }}</h2>
+                    <p class="text-muted mb-0">{{ author.position }}</p>
+                  </div>
+                </div>
+                
+                <p class="author-bio mb-3">{{ author.bio | truncatewords: 30 }}</p>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="author-social">
+                    {% if author.website %}
+                      <a href="{{ author.website }}" class="me-2" target="_blank"><i class="fas fa-globe"></i></a>
+                    {% endif %}
+                    {% if author.twitter %}
+                      <a href="{{ author.twitter }}" class="me-2" target="_blank"><i class="fab fa-twitter"></i></a>
+                    {% endif %}
+                    {% if author.linkedin %}
+                      <a href="{{ author.linkedin }}" class="me-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    {% endif %}
+                  </div>
+                  <a href="{{ author.url }}" class="btn btn-outline-primary btn-sm">Ver perfil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

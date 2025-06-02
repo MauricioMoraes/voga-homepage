@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="900px" viewBox="0 0 800 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     transform="scale(1.2)" transform-origin="center center">
+    <title>Judicial Assets Fund Illustration</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4A6FFF" offset="0%"></stop>
+            <stop stop-color="#6366F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4A6FFF" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#6366F1" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#10B981" offset="0%"></stop>
+            <stop stop-color="#3B82F6" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-15.0%" y="-15.0%" width="130.0%" height="130.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="15" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-15.0%" y="-15.0%" width="130.0%" height="130.0%" filterUnits="objectBoundingBox" id="filter-shadow">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter id="shadow-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.29 0 0 0 0 0.44 0 0 0 0 1 0 0 0 0.5 0" result="glow" />
+            <feBlend in="SourceGraphic" in2="glow" mode="normal" />
+        </filter>
+        <filter id="shadow-green-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06 0 0 0 0 0.73 0 0 0 0 0.51 0 0 0 0.5 0" result="glow" />
+            <feBlend in="SourceGraphic" in2="glow" mode="normal" />
+        </filter>
+    </defs>
+    <g id="Judicial-Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Elements -->
+        <circle id="Glow1" fill="#4A6FFF" opacity="0.1" filter="url(#filter-4)" cx="650" cy="200" r="120"></circle>
+        <circle id="Glow2" fill="#10B981" opacity="0.1" filter="url(#filter-4)" cx="200" cy="600" r="100"></circle>
+        
+        <!-- Scales of Justice -->
+        <g id="Scales" transform="translate(100, 300)">
+            <path d="M300,50 L300,300" id="Scale-Stand" stroke="#333333" stroke-width="8"></path>
+            <path d="M200,100 L400,100" id="Scale-Beam" stroke="#333333" stroke-width="8"></path>
+            <circle id="Scale-Left" fill="url(#linearGradient-1)" cx="200" cy="150" r="50" filter="url(#shadow-glow)"></circle>
+            <circle id="Scale-Right" fill="url(#linearGradient-3)" cx="400" cy="150" r="50" filter="url(#shadow-green-glow)"></circle>
+            <path d="M250,60 L350,60 C355.522847,60 360,64.4771525 360,70 L360,90 C360,95.5228475 355.522847,100 350,100 L250,100 C244.477153,100 240,95.5228475 240,90 L240,70 C240,64.4771525 244.477153,60 250,60 Z" id="Scale-Top" fill="#333333"></path>
+        </g>
+        
+        <!-- Financial Chart -->
+        <g id="Chart" transform="translate(400, 150)">
+            <rect id="Chart-BG" fill="url(#linearGradient-2)" x="0" y="0" width="300" height="250" rx="10"></rect>
+            
+            <!-- Chart Bars -->
+            <g class="chart-bars">
+                <rect id="Bar1" fill="#4A6FFF" x="30" y="150" width="30" height="80" rx="4"></rect>
+                <rect id="Bar2" fill="#4A6FFF" x="80" y="120" width="30" height="110" rx="4"></rect>
+                <rect id="Bar3" fill="#4A6FFF" x="130" y="100" width="30" height="130" rx="4"></rect>
+                <rect id="Bar4" fill="#4A6FFF" x="180" y="80" width="30" height="150" rx="4"></rect>
+                <rect id="Bar5" fill="#4A6FFF" x="230" y="50" width="30" height="180" rx="4"></rect>
+            </g>
+            
+            <!-- Chart Line -->
+            <path d="M30,130 L80,110 L130,90 L180,60 L230,40" id="Line" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Dot1" fill="#10B981" cx="30" cy="130" r="6"></circle>
+            <circle id="Dot2" fill="#10B981" cx="80" cy="110" r="6"></circle>
+            <circle id="Dot3" fill="#10B981" cx="130" cy="90" r="6"></circle>
+            <circle id="Dot4" fill="#10B981" cx="180" cy="60" r="6"></circle>
+            <circle id="Dot5" fill="#10B981" cx="230" cy="40" r="6"></circle>
+        </g>
+        
+        <!-- Judicial Document with Badge -->
+        <g id="Document" transform="translate(150, 200)">
+            <!-- Document Background - with square border edges -->
+            <rect id="Document-BG" fill="#FFFFFF" stroke="#4A6FFF" stroke-width="2" x="1" y="0" width="148" height="198"></rect>
+            
+            <!-- Document Header Marking "JUDICIAL" -->
+            <rect id="Header-BG" fill="#4A6FFF" opacity="0.1" x="1" y="0" width="148" height="30" rx="4"></rect>
+            <text id="Judicial-Text" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#4A6FFF">
+                <tspan x="50" y="20">JUDICIAL</tspan>
+            </text>
+            <path d="M30,15 L40,15" id="Header-Dash" stroke="#4A6FFF" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M110,15 L120,15" id="Header-Dash2" stroke="#4A6FFF" stroke-width="2" stroke-linecap="round"></path>
+            
+            <!-- Document Content -->
+            <rect id="Line1" fill="#E6E6E6" x="30" y="50" width="90" height="6" rx="3"></rect>
+            <rect id="Line2" fill="#E6E6E6" x="30" y="70" width="90" height="6" rx="3"></rect>
+            <rect id="Line3" fill="#E6E6E6" x="30" y="90" width="90" height="6" rx="3"></rect>
+            <rect id="Line4" fill="#E6E6E6" x="30" y="110" width="60" height="6" rx="3"></rect>
+            
+            <!-- Document Footer with Signatures and Legal Mark -->
+            <rect id="Footer-BG" fill="#4A6FFF" opacity="0.05" x="15" y="135" width="120" height="50" rx="4"></rect>
+            <rect id="Signature1" fill="#4A6FFF" opacity="0.3" x="25" y="145" width="40" height="4" rx="2"></rect>
+            <rect id="Signature2" fill="#4A6FFF" opacity="0.3" x="25" y="155" width="30" height="4" rx="2"></rect>
+            <rect id="Signature3" fill="#4A6FFF" opacity="0.3" x="85" y="145" width="40" height="4" rx="2"></rect>
+            <rect id="Signature4" fill="#4A6FFF" opacity="0.3" x="85" y="155" width="30" height="4" rx="2"></rect>
+            
+            <!-- Legal Verification Badge -->
+            <g id="Legal-Badge" transform="translate(60, 170)">
+                <rect id="Badge-BG" fill="#10B981" x="-20" y="-10" width="40" height="20" rx="10"></rect>
+                <text id="Legal-Text" font-family="Arial-BoldMT, Arial" font-size="8" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="-15" y="3">LEGAL</tspan>
+                </text>
+                <circle id="Check-Circle" fill="#FFFFFF" cx="10" cy="0" r="6"></circle>
+                <path d="M7,0 L9,2 L13,-2" id="Check" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+        
+        <!-- Brazilian Currency Symbol - centered -->
+        <g id="Currency" transform="translate(500, 450)">
+            <circle id="Coin-BG" fill="#FFDD00" cx="50" cy="50" r="50"></circle>
+            <text font-family="Arial-BoldMT, Arial" font-size="60" font-weight="bold" fill="#333333" text-anchor="middle">
+                <tspan x="50" y="70">R$</tspan>
+            </text>
+        </g>
+        
+        <!-- Connecting Lines -->
+        <path d="M300,350 C350,300 400,400 450,350" id="Connection1" stroke="#4A6FFF" stroke-width="2" stroke-dasharray="5,5"></path>
+        <path d="M450,350 C500,300 550,400 600,350" id="Connection2" stroke="#4A6FFF" stroke-width="2" stroke-dasharray="5,5"></path>
+        
+        <!-- Decorative Elements -->
+        <circle id="Dot1" fill="#4A6FFF" cx="300" cy="350" r="5"></circle>
+        <circle id="Dot2" fill="#4A6FFF" cx="450" cy="350" r="5"></circle>
+        <circle id="Dot3" fill="#4A6FFF" cx="600" cy="350" r="5"></circle>
+        
+        <!-- Judicial Process Elements -->
+        <g id="Process-Elements" transform="translate(150, 100)">
+            <rect id="Process-Label" fill="#4A6FFF" opacity="0.2" x="0" y="0" width="80" height="24" rx="12"></rect>
+            <text id="Process-Text" font-family="Arial-BoldMT, Arial" font-size="10" font-weight="bold" fill="#4A6FFF">
+                <tspan x="10" y="15">PROCESSO</tspan>
+            </text>
+            <rect id="Process-Number" fill="#FFFFFF" x="85" y="0" width="100" height="24" rx="12" stroke="#4A6FFF" stroke-width="1"></rect>
+            <text id="Number-Text" font-family="Arial, Arial" font-size="10" font-weight="normal" fill="#4A6FFF">
+                <tspan x="95" y="15">0001234-56.2023</tspan>
+            </text>
+        </g>
+        
+        <!-- Additional Decorative Elements -->
+        <g id="DataPoints" transform="translate(100, 550)">
+            <rect fill="url(#linearGradient-1)" x="0" y="0" width="150" height="80" rx="10"></rect>
+            <text font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#FFFFFF">
+                <tspan x="20" y="30">DADOS</tspan>
+            </text>
+            <rect fill="#FFFFFF" opacity="0.2" x="20" y="45" width="50" height="5" rx="2"></rect>
+            <rect fill="#FFFFFF" opacity="0.2" x="80" y="45" width="30" height="5" rx="2"></rect>
+            <rect fill="#FFFFFF" opacity="0.2" x="20" y="60" width="80" height="5" rx="2"></rect>
+        </g>
+        
+        <!-- Growth Indicator -->
+        <g id="Growth" transform="translate(550, 150)">
+            <circle fill="url(#linearGradient-3)" cx="30" cy="30" r="30" opacity="0.8"></circle>
+            <path d="M20,35 L30,25 L40,35" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M30,25 L30,40" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

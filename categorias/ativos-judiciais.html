@@ -1,0 +1,31 @@
+---
+layout: default
+title: Ativos Judiciais • Artigos sobre Gestão e Investimento
+permalink: /categorias/ativos-judiciais/
+---
+
+<div class="container blog-container my-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1 class="blog-title mb-2">{{ page.title }}</h1>
+      <p class="lead mb-5">Artigos e análises sobre ativos judiciais, precatórios, cessão de crédito e oportunidades de investimento no mercado jurídico.</p>
+      
+      {% assign filtered_posts = site.categories['Ativos Judiciais'] %}
+      {% if filtered_posts.size > 0 %}
+        <div class="row row-cols-1 g-4">
+          {% for post in filtered_posts %}
+            <div class="col">
+              {% include post-card-horizontal.html post=post %}
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p>Nenhum post encontrado nesta categoria.</p>
+      {% endif %}
+    </div>
+    
+    <div class="col-lg-4">
+      {% include blog-sidebar.html %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Vehicle Tracking Hero</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4A6FFF" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#4A6FFF" stop-opacity="0.05" offset="100%"></stop>
+        </linearGradient>
+        <filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+            <feOffset dx="0" dy="5" result="offsetblur" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.4" />
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Gradient Background -->
+    <rect width="800" height="500" fill="url(#linearGradient-1)" rx="8"></rect>
+
+    <!-- Brazil Map Group -->
+    <g id="Brazil-Map" transform="translate(50, 50)" filter="url(#shadow-1)">
+        <!-- Simplified Brazil Map Outline -->
+        <path d="M250,30 C290,35 330,60 360,90 C390,120 410,150 420,190 
+                 C430,230 435,270 420,310 C405,350 380,380 345,400 
+                 C310,420 270,430 230,425 C190,420 150,400 120,370 
+                 C90,340 70,300 65,260 C60,220 70,180 90,145 
+                 C110,110 140,80 175,55 C210,30 250,30 250,30 Z" 
+              fill="#FFFFFF" stroke="#4A6FFF" stroke-width="2"></path>
+
+        <!-- Major Brazilian Cities -->
+        <g id="Cities">
+            <!-- São Paulo -->
+            <g transform="translate(210, 310)">
+                <circle fill="#4A6FFF" cx="0" cy="0" r="8"></circle>
+                <text font-family="Arial" font-size="10" fill="#333333" x="12" y="4">São Paulo</text>
+            </g>
+            
+            <!-- Rio de Janeiro -->
+            <g transform="translate(250, 330)">
+                <circle fill="#4A6FFF" cx="0" cy="0" r="8"></circle>
+                <text font-family="Arial" font-size="10" fill="#333333" x="12" y="4">Rio de Janeiro</text>
+            </g>
+            
+            <!-- Brasília -->
+            <g transform="translate(220, 200)">
+                <circle fill="#4A6FFF" cx="0" cy="0" r="8"></circle>
+                <text font-family="Arial" font-size="10" fill="#333333" x="12" y="4">Brasília</text>
+            </g>
+            
+            <!-- Salvador -->
+            <g transform="translate(320, 200)">
+                <circle fill="#4A6FFF" cx="0" cy="0" r="8"></circle>
+                <text font-family="Arial" font-size="10" fill="#333333" x="12" y="4">Salvador</text>
+            </g>
+            
+            <!-- Manaus -->
+            <g transform="translate(150, 100)">
+                <circle fill="#4A6FFF" cx="0" cy="0" r="8"></circle>
+                <text font-family="Arial" font-size="10" fill="#333333" x="12" y="4">Manaus</text>
+            </g>
+            
+            <!-- Porto Alegre -->
+            <g transform="translate(180, 380)">
+                <circle fill="#4A6FFF" cx="0" cy="0" r="8"></circle>
+                <text font-family="Arial" font-size="10" fill="#333333" x="12" y="4">Porto Alegre</text>
+            </g>
+            
+            <!-- Recife -->
+            <g transform="translate(350, 150)">
+                <circle fill="#4A6FFF" cx="0" cy="0" r="8"></circle>
+                <text font-family="Arial" font-size="10" fill="#333333" x="12" y="4">Recife</text>
+            </g>
+        </g>
+
+        <!-- Vehicle Tracking Route -->
+        <g id="Tracking-Route">
+            <!-- Route Path -->
+            <path d="M210,310 L250,330 L220,200 L320,200 L350,150 L180,380" 
+                  stroke="#FF5555" stroke-width="3" stroke-dasharray="10,5" 
+                  fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+            
+            <!-- Tracked Vehicle 1 -->
+            <g transform="translate(210, 310)" id="Vehicle-1">
+                <rect width="20" height="10" fill="#333333" rx="2" transform="translate(-10, -5)"></rect>
+                <rect width="10" height="5" fill="#87CEFA" rx="1" transform="translate(-5, -4)"></rect>
+                <circle fill="#333333" cx="-5" cy="5" r="2"></circle>
+                <circle fill="#333333" cx="5" cy="5" r="2"></circle>
+                
+                <!-- Timestamp and Location Info -->
+                <g transform="translate(15, -15)">
+                    <rect width="120" height="40" fill="white" stroke="#4A6FFF" stroke-width="1" rx="4" transform="translate(-15, -10)"></rect>
+                    <text font-family="Arial" font-size="8" fill="#333333" x="-10" y="0">São Paulo, SP</text>
+                    <text font-family="Arial" font-size="8" fill="#666666" x="-10" y="12">12/04/2025 09:15:33</text>
+                    <text font-family="Arial" font-size="8" fill="#666666" x="-10" y="24">Lat: -23.550520, Long: -46.633308</text>
+                </g>
+            </g>
+            
+            <!-- Tracked Vehicle 2 (Moving) -->
+            <g transform="translate(240, 240)" id="Vehicle-2">
+                <rect width="20" height="10" fill="#FF5555" rx="2" transform="translate(-10, -5)"></rect>
+                <rect width="10" height="5" fill="#87CEFA" rx="1" transform="translate(-5, -4)"></rect>
+                <circle fill="#333333" cx="-5" cy="5" r="2"></circle>
+                <circle fill="#333333" cx="5" cy="5" r="2"></circle>
+                
+                <!-- Signal Waves Animation -->
+                <circle fill="none" stroke="#FF5555" stroke-width="1" cx="0" cy="0" r="15">
+                    <animate attributeName="r" from="5" to="20" dur="2s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" from="0.8" to="0" dur="2s" repeatCount="indefinite" />
+                </circle>
+                
+                <!-- Timestamp and Location Info -->
+                <g transform="translate(15, -15)">
+                    <rect width="120" height="40" fill="white" stroke="#FF5555" stroke-width="1" rx="4" transform="translate(-15, -10)"></rect>
+                    <text font-family="Arial" font-size="8" fill="#333333" x="-10" y="0">Em trânsito</text>
+                    <text font-family="Arial" font-size="8" fill="#666666" x="-10" y="12">12/04/2025 12:33:42</text>
+                    <text font-family="Arial" font-size="8" fill="#666666" x="-10" y="24">Lat: -15.793889, Long: -47.882778</text>
+                </g>
+            </g>
+        </g>
+    </g>
+
+    <!-- Dashboard Elements (Right Side) -->
+    <g id="Dashboard" transform="translate(520, 80)">
+        <!-- Dashboard Background -->
+        <rect width="240" height="340" fill="white" rx="12" filter="url(#shadow-1)"></rect>
+        
+        <!-- Dashboard Header -->
+        <rect width="240" height="50" fill="#4A6FFF" rx="12 12 0 0"></rect>
+        <text font-family="Arial" font-weight="bold" font-size="16" fill="white" x="20" y="30">Rastreamento em Tempo Real</text>
+        
+        <!-- Vehicle Information Panel -->
+        <g transform="translate(20, 70)">
+            <text font-family="Arial" font-weight="bold" font-size="14" fill="#333333" x="0" y="0">Veículo Localizado</text>
+            <line x1="0" y1="10" x2="200" y2="10" stroke="#EEEEEE" stroke-width="2" />
+            
+            <!-- Vehicle Details -->
+            <g transform="translate(0, 30)">
+                <text font-family="Arial" font-size="12" fill="#666666" x="0" y="0">Placa: ABC-1234</text>
+                <text font-family="Arial" font-size="12" fill="#666666" x="0" y="20">Modelo: Honda Civic</text>
+                <text font-family="Arial" font-size="12" fill="#666666" x="0" y="40">Cor: Prata</text>
+                <text font-family="Arial" font-size="12" fill="#666666" x="0" y="60">Proprietário: João Silva</text>
+            </g>
+        </g>
+        
+        <!-- Location History -->
+        <g transform="translate(20, 180)">
+            <text font-family="Arial" font-weight="bold" font-size="14" fill="#333333" x="0" y="0">Histórico de Localizações</text>
+            <line x1="0" y1="10" x2="200" y2="10" stroke="#EEEEEE" stroke-width="2" />
+            
+            <!-- History Records -->
+            <g transform="translate(0, 25)">
+                <circle fill="#4A6FFF" cx="5" cy="5" r="5"></circle>
+                <text font-family="Arial" font-size="11" fill="#333333" x="15" y="9">São Paulo, SP - 12/04/2025</text>
+            </g>
+            
+            <g transform="translate(0, 50)">
+                <circle fill="#4A6FFF" cx="5" cy="5" r="5"></circle>
+                <text font-family="Arial" font-size="11" fill="#333333" x="15" y="9">Ribeirão Preto, SP - 10/04/2025</text>
+            </g>
+            
+            <g transform="translate(0, 75)">
+                <circle fill="#4A6FFF" cx="5" cy="5" r="5"></circle>
+                <text font-family="Arial" font-size="11" fill="#333333" x="15" y="9">Brasília, DF - 05/04/2025</text>
+            </g>
+            
+            <g transform="translate(0, 100)">
+                <circle fill="#4A6FFF" cx="5" cy="5" r="5"></circle>
+                <text font-family="Arial" font-size="11" fill="#333333" x="15" y="9">Salvador, BA - 28/03/2025</text>
+            </g>
+        </g>
+    </g>
+</svg>

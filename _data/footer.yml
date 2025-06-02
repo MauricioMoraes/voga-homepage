@@ -1,0 +1,39 @@
+copyright: "© 2025 Rhilo Investimentos LTDA. Todos os direitos reservados."
+socials:
+  - name: LinkedIn
+    icon: fab fa-linkedin
+    link: https://linkedin.com/
+  - name: Instagram
+    icon: fab fa-instagram
+    link: https://instagram.com/
+  - name: YouTube
+    icon: fab fa-youtube
+    link: https://youtube.com/
+
+links:
+  - title: Investimentos
+    items:
+      - name: Fundos de Investimento
+        link: /#investment
+      - name: Ativos Judiciais
+        link: /#resources
+      - name: Performance
+        link: /#investment
+  
+  - title: Para Advogados
+    items:
+      - name: Antecipação de Honorários
+        link: /#resources
+      - name: Cessão de Créditos
+        link: /#resources
+      - name: Empréstimo Garantido
+        link: /#contact
+  
+  - title: Informações
+    items:
+      - name: Blog
+        link: /blog/
+      - name: Termos de Uso
+        link: /termos-de-uso/
+      - name: Política de Privacidade
+        link: /politica-de-privacidade/

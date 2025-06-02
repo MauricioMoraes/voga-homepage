@@ -1,0 +1,75 @@
+<footer class="footer bg-dark text-white py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="ativo-logo mb-3">
+          <span class="logo-text">Ativo<span class="logo-accent">Ju</span>dicial<span class="logo-dot">.</span></span>
+          <span class="logo-underline"></span>
+        </div>
+        <p class="mb-3">{{ site.description }}</p>
+        <div class="social-links">
+          {% for social in site.data.footer.socials %}
+            <a href="{{ social.link }}" class="me-2 text-white" target="_blank" rel="noopener">
+              <i class="{{ social.icon }}"></i>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      {% for column in site.data.footer.links %}
+        <div class="col-6 col-lg-2">
+          <h5 class="text-white mb-3">{{ column.title }}</h5>
+          <ul class="list-unstyled">
+            {% for item in column.items %}
+              <li class="mb-2">
+                <a href="{{ item.link | relative_url }}" class="text-white-50 text-decoration-none">{{ item.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+      
+      <div class="col-lg-4">
+        <h5 class="text-white mb-3">Contato</h5>
+        <p class="text-white-50 mb-3">Entre em contato para conhecer nossas oportunidades de investimento em ativos judiciais ou para antecipar seus créditos judiciais.</p>
+        <p class="text-white-50 mb-2">
+          <i class="fas fa-envelope me-2"></i> {{ site.email }}
+        </p>
+        <p class="text-white-50 mb-2">
+          <i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1765, 14º andar - São Paulo, SP
+        </p>
+        <p class="text-white-50 mb-2">
+          <i class="fas fa-id-card me-2"></i> CNPJ: 48.325.647/0001-72
+        </p>
+        
+        <h6 class="text-primary mt-4 mb-3">Ativos Judiciais</h6>
+        <ul class="list-unstyled">
+          <li class="text-white-50 mb-2 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Rentabilidade alvo: CDI + 8% a.a.
+          </li>
+          <li class="text-white-50 mb-2 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Investimento mínimo: R$50.000
+          </li>
+          <li class="text-white-50 mb-2 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Liquidez semestral
+          </li>
+          <li class="text-white-50 small">
+            <i class="fas fa-check-circle text-primary me-2"></i> Classificação de risco: A+ (Austin Rating)
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <hr class="my-4 bg-secondary">
+    
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb-md-0">{{ site.data.footer.copyright }}</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="{{ '/termos-de-uso/' | relative_url }}" class="text-white-50 me-3">Termos de Uso</a>
+        <a href="{{ '/politica-de-privacidade/' | relative_url }}" class="text-white-50">Política de Privacidade</a>
+      </div>
+    </div>
+  </div>
+</footer>

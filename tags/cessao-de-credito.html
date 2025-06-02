@@ -1,0 +1,31 @@
+---
+layout: default
+title: Cessão de Crédito • Artigos Relacionados
+permalink: /tags/cessao-de-credito/
+---
+
+<div class="container blog-container my-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1 class="blog-title mb-2">{{ page.title }}</h1>
+      <p class="lead mb-5">Artigos e análises sobre cessão de crédito judicial, processos, deságio e oportunidades para advogados e investidores.</p>
+      
+      {% assign filtered_posts = site.tags['cessão de crédito'] %}
+      {% if filtered_posts.size > 0 %}
+        <div class="row row-cols-1 g-4">
+          {% for post in filtered_posts %}
+            <div class="col">
+              {% include post-card-horizontal.html post=post %}
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p>Nenhum post encontrado com esta tag.</p>
+      {% endif %}
+    </div>
+    
+    <div class="col-lg-4">
+      {% include blog-sidebar.html %}
+    </div>
+  </div>
+</div>
