@@ -1,179 +1,450 @@
-<section class="hero-section bg-dark py-7 position-relative" id="voga-hero">
-  <div class="container">
+<section class="hero-section position-relative overflow-hidden" id="voga-hero">
+  <!-- Gradient Background -->
+  <div class="hero-bg position-absolute w-100 h-100"></div>
+  
+  <div class="container position-relative py-7">
     <div class="row align-items-center gy-5">
+      <!-- Text Content -->
       <div class="col-lg-6 mb-5 mb-lg-0">
-        <div class="badge-wrapper mb-4 d-inline-block">
-          <div class="badge-pill bg-gradient-primary text-white fw-bold py-3 px-5 rounded-pill d-inline-flex align-items-center voga-badge">
-            <i class="fas fa-calculator me-3 fa-lg"></i>
-            <span class="fs-5">Ecossistema de Soluções Tecnológicas</span>
-          </div>
-        </div>
-        <h1 class="display-2 fw-bold mb-5 text-white voga-title">Transformando Escritórios com <span class="text-gradient">Tecnologia e IA</span></h1>
-        <p class="lead fs-4 mb-5 text-light voga-description">A Voga é o hub completo de soluções tecnológicas para advogados. Nossa solução principal é o <strong>Cálculo Jurídico</strong>, complementado por um ecossistema integrado de ferramentas que permite aos escritórios faturar mais com maior eficiência.</p>
-        <div class="d-flex gap-4 flex-wrap mb-5">
-          <a href="https://calculojuridico.com.br" target="_blank" class="btn btn-primary btn-lg fw-bold py-3 px-4 rounded-pill shadow-sm hover-scale voga-cta-primary">Acessar Cálculo Jurídico</a>
-          <a href="#ecosystem" class="btn btn-outline-light btn-lg fw-bold py-3 px-4 rounded-pill hover-glow voga-cta-secondary">Ver Todas as Soluções</a>
-          <a href="#contact" class="btn btn-outline-primary btn-lg fw-bold py-3 px-4 rounded-pill hover-glow voga-cta-tertiary">Falar com Consultor</a>
-        </div>
-        
-        <!-- Stats -->
-        <div class="row mt-6 gy-4">
-          <div class="col-4">
-            <div class="d-flex align-items-center">
-              <div class="stat-icon bg-primary rounded-3 me-4 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; position: relative;">
-                <i class="fas fa-robot text-white fa-xl"></i>
-                <div class="arrow-indicator bg-success text-white d-flex align-items-center justify-content-center" style="position: absolute; bottom: -6px; right: -6px; width: 24px; height: 24px; border-radius: 50%; font-size: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                  <i class="fas fa-arrow-up"></i>
-                </div>
-              </div>
-              <div class="stat-content">
-                <h3 class="fs-3 mb-1 fw-bold text-white voga-stat-1">25+</h3>
-                <p class="fs-6 text-light mb-0">Ferramentas Integradas</p>
-              </div>
+        <div class="hero-content">
+          <!-- Badge -->
+          <div class="badge-wrapper mb-4 d-inline-block">
+            <div class="hero-badge bg-white text-primary fw-bold py-3 px-5 rounded-pill d-inline-flex align-items-center shadow-sm">
+              <i class="fas fa-cogs me-3 fa-lg text-primary"></i>
+              <span class="fs-5">Ecossistema de Soluções Tecnológicas</span>
             </div>
           </div>
-          <div class="col-4">
-            <div class="d-flex align-items-center">
-              <div class="stat-icon bg-primary rounded-3 me-4 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; position: relative;">
-                <i class="fas fa-cogs text-white fa-xl"></i>
-                <div class="arrow-indicator bg-success text-white d-flex align-items-center justify-content-center" style="position: absolute; bottom: -6px; right: -6px; width: 24px; height: 24px; border-radius: 50%; font-size: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                  <i class="fas fa-arrow-up"></i>
+          
+          <!-- Main Title -->
+          <h1 class="hero-title display-1 fw-bold mb-4 text-dark">
+            Transformando a <span class="text-primary">Advocacia</span> com Tecnologia
+          </h1>
+          
+          <!-- Description -->
+          <p class="hero-description lead fs-4 mb-5 text-dark-75">
+            A <strong class="text-primary">Voga</strong> é o hub completo de soluções tecnológicas para advogados. 
+            Nossa solução principal é o <strong class="text-primary">Cálculo Jurídico</strong>, 
+            complementado por um ecossistema integrado que permite aos escritórios 
+            <strong class="text-success">faturar mais com maior eficiência</strong>.
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="d-flex gap-3 flex-wrap mb-5">
+            <a href="https://calculojuridico.com.br" target="_blank" class="btn btn-primary btn-lg fw-bold py-3 px-5 rounded-pill shadow hover-scale">
+              <i class="fas fa-calculator me-2"></i>
+              Acessar Cálculo Jurídico
+            </a>
+            <a href="#ecosystem" class="btn btn-outline-primary btn-lg fw-bold py-3 px-5 rounded-pill hover-lift">
+              Ver Todas as Soluções
+            </a>
+          </div>
+          
+          <!-- Stats -->
+          <div class="hero-stats row g-4 mt-4">
+            <div class="col-4">
+              <div class="stat-item text-center">
+                <div class="stat-icon bg-primary bg-opacity-10 rounded-3 mx-auto mb-2 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                  <i class="fas fa-tools text-primary"></i>
                 </div>
-              </div>
-              <div class="stat-content">
-                <h3 class="fs-3 mb-1 fw-bold text-white voga-stat-2">100%</h3>
-                <p class="fs-6 text-light mb-0">Automatizado</p>
+                <h3 class="stat-number h3 mb-1 fw-bold text-dark">25+</h3>
+                <p class="stat-label small text-muted mb-0">Ferramentas</p>
               </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="d-flex align-items-center">
-              <div class="stat-icon bg-primary rounded-3 me-4 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; position: relative;">
-                <i class="fas fa-users text-white fa-xl"></i>
-                <div class="arrow-indicator bg-success text-white d-flex align-items-center justify-content-center" style="position: absolute; bottom: -6px; right: -6px; width: 24px; height: 24px; border-radius: 50%; font-size: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                  <i class="fas fa-arrow-down"></i>
+            <div class="col-4">
+              <div class="stat-item text-center">
+                <div class="stat-icon bg-success bg-opacity-10 rounded-3 mx-auto mb-2 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                  <i class="fas fa-users text-success"></i>
                 </div>
+                <h3 class="stat-number h3 mb-1 fw-bold text-dark">15k+</h3>
+                <p class="stat-label small text-muted mb-0">Advogados</p>
               </div>
-              <div class="stat-content">
-                <h3 class="fs-3 mb-1 fw-bold text-white voga-stat-3">5000+</h3>
-                <p class="fs-6 text-light mb-0">Advogados Atendidos</p>
+            </div>
+            <div class="col-4">
+              <div class="stat-item text-center">
+                <div class="stat-icon bg-warning bg-opacity-10 rounded-3 mx-auto mb-2 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                  <i class="fas fa-chart-line text-warning"></i>
+                </div>
+                <h3 class="stat-number h3 mb-1 fw-bold text-dark">200%</h3>
+                <p class="stat-label small text-muted mb-0">Eficiência</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 hero-image-container text-center">
-        <img src="{{ '/assets/images/voga-ecosystem-hero.svg' | relative_url }}" alt="Voga - Ecossistema do Cálculo Jurídico" class="img-fluid hero-static-image">
+      
+      <!-- Animated Diagram -->
+      <div class="col-lg-6">
+        <div class="hero-diagram position-relative">
+          <svg width="100%" height="500" viewBox="0 0 500 500" class="ecosystem-svg">
+            <!-- Central Hub -->
+            <g id="central-hub">
+              <circle cx="250" cy="250" r="80" fill="#4361EE" opacity="0.9" stroke="#fff" stroke-width="3"/>
+              <text x="250" y="240" text-anchor="middle" fill="white" font-size="14" font-weight="bold">VOGA</text>
+              <text x="250" y="260" text-anchor="middle" fill="white" font-size="12">Hub Central</text>
+            </g>
+            
+            <!-- Solution Nodes -->
+            <g id="solution-nodes">
+              <!-- Cálculo Jurídico - Main Solution -->
+              <g id="calculo-juridico" class="solution-node main-solution">
+                <circle cx="250" cy="120" r="45" fill="#10B981" stroke="#fff" stroke-width="2"/>
+                <text x="250" y="115" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Cálculo</text>
+                <text x="250" y="128" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Jurídico</text>
+              </g>
+              
+              <!-- E-Dossie -->
+              <g id="edossie" class="solution-node">
+                <circle cx="400" cy="180" r="35" fill="#6366F1" stroke="#fff" stroke-width="2"/>
+                <text x="400" y="180" text-anchor="middle" fill="white" font-size="9" font-weight="bold">E-Dossie</text>
+              </g>
+              
+              <!-- Chat Jurídico -->
+              <g id="chat-juridico" class="solution-node">
+                <circle cx="420" cy="320" r="35" fill="#8B5CF6" stroke="#fff" stroke-width="2"/>
+                <text x="420" y="315" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Chat</text>
+                <text x="420" y="328" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Jurídico</text>
+              </g>
+              
+              <!-- Clientes ADV -->
+              <g id="clientes-adv" class="solution-node">
+                <circle cx="100" cy="320" r="35" fill="#06B6D4" stroke="#fff" stroke-width="2"/>
+                <text x="100" y="315" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Clientes</text>
+                <text x="100" y="328" text-anchor="middle" fill="white" font-size="8" font-weight="bold">ADV</text>
+              </g>
+              
+              <!-- Advogados Aprovados -->
+              <g id="advogados-aprovados" class="solution-node">
+                <circle cx="80" cy="180" r="35" fill="#F59E0B" stroke="#fff" stroke-width="2"/>
+                <text x="80" y="175" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Advogados</text>
+                <text x="80" y="188" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Aprovados</text>
+              </g>
+            </g>
+            
+            <!-- Connection Lines -->
+            <g id="connections" stroke="#4361EE" stroke-width="2" opacity="0.6">
+              <!-- Main solution connection -->
+              <line x1="250" y1="170" x2="250" y2="205" class="connection main-connection"/>
+              
+              <!-- Other connections -->
+              <line x1="290" y1="210" x2="365" y2="180" class="connection"/>
+              <line x1="320" y1="280" x2="385" y2="320" class="connection"/>
+              <line x1="180" y1="280" x2="135" y2="320" class="connection"/>
+              <line x1="210" y1="210" x2="115" y2="180" class="connection"/>
+            </g>
+            
+            <!-- Floating particles -->
+            <g id="particles">
+              <circle cx="150" cy="100" r="3" fill="#4361EE" opacity="0.6" class="particle"/>
+              <circle cx="350" cy="90" r="2" fill="#10B981" opacity="0.5" class="particle"/>
+              <circle cx="450" cy="150" r="2.5" fill="#6366F1" opacity="0.6" class="particle"/>
+              <circle cx="50" cy="250" r="3" fill="#8B5CF6" opacity="0.5" class="particle"/>
+              <circle cx="430" cy="400" r="2" fill="#06B6D4" opacity="0.6" class="particle"/>
+              <circle cx="120" cy="420" r="2.5" fill="#F59E0B" opacity="0.5" class="particle"/>
+            </g>
+            
+            <!-- Data flow indicators -->
+            <g id="data-flow">
+              <circle cx="250" cy="190" r="4" fill="#4361EE" class="flow-dot"/>
+              <circle cx="320" cy="200" r="3" fill="#10B981" class="flow-dot"/>
+              <circle cx="180" cy="200" r="3" fill="#6366F1" class="flow-dot"/>
+            </g>
+          </svg>
+        </div>
       </div>
     </div>
     
-    <!-- Full Width CTA Banner -->
-    <div class="row mt-5">
+    <!-- Bottom CTA Banner -->
+    <div class="row mt-6">
       <div class="col-12">
-        <div class="p-4 bg-primary bg-opacity-10 rounded-4 border border-primary border-opacity-25 cta-banner">
+        <div class="cta-banner bg-white p-4 rounded-4 shadow-sm border border-primary border-opacity-25">
           <div class="d-flex align-items-center flex-wrap">
             <div class="me-4 text-primary">
-              <i class="fas fa-info-circle fa-2x"></i>
+              <i class="fas fa-rocket fa-2x"></i>
             </div>
             <div class="flex-grow-1">
-              <h4 class="fs-5 mb-2 text-primary">Cálculo Jurídico - Nossa Solução Principal</h4>
-              <p class="fs-6 mb-0 text-light">Comece com nossa ferramenta líder em cálculos jurídicos e explore todo o ecossistema de soluções tecnológicas para modernizar seu escritório.</p>
+              <h4 class="fs-5 mb-2 text-dark">Comece com o Cálculo Jurídico - Nossa Solução Principal</h4>
+              <p class="fs-6 mb-0 text-muted">Acesse nossa ferramenta líder em cálculos jurídicos e descubra todo o potencial do ecossistema Voga para modernizar seu escritório.</p>
             </div>
             <div class="ms-auto mt-3 mt-md-0">
-              <a href="https://calculojuridico.com.br" target="_blank" class="btn btn-primary rounded-pill hover-scale px-4 py-2">Experimentar Grátis</a>
+              <a href="https://calculojuridico.com.br" target="_blank" class="btn btn-primary rounded-pill hover-scale px-4 py-2 fw-bold">
+                <i class="fas fa-external-link-alt me-2"></i>
+                Experimentar Grátis
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  <!-- Background decorative elements -->
+  <div class="position-absolute top-0 end-0 w-50 h-50 bg-decoration-1"></div>
+  <div class="position-absolute bottom-0 start-0 w-50 h-50 bg-decoration-2"></div>
 </section>
 
-<!-- Static styles without animations -->
-<style>
-  /* Color Gradients */
-  .badge-gradient-primary {
-    background: linear-gradient(90deg, #4361EE, #6366F1);
-  }
+<!-- Anime.js and Custom Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initial setup - hide elements
+  anime.set('.solution-node', { scale: 0, opacity: 0 });
+  anime.set('.connection', { strokeDasharray: '5 5', strokeDashoffset: 100, opacity: 0 });
+  anime.set('.particle', { scale: 0, opacity: 0 });
+  anime.set('.flow-dot', { scale: 0, opacity: 0 });
+  anime.set('#central-hub', { scale: 0, opacity: 0 });
   
-  .bg-gradient-primary {
-    background: linear-gradient(90deg, #4361EE, #6366F1);
-  }
+  // Animation timeline
+  const tl = anime.timeline({
+    easing: 'easeOutElastic(1, .8)',
+    duration: 800
+  });
   
-  .bg-gradient-success {
-    background: linear-gradient(90deg, #0E9F6E, #10B981);
-  }
+  // 1. Central hub appears
+  tl.add({
+    targets: '#central-hub',
+    scale: [0, 1],
+    opacity: [0, 1],
+    duration: 1000,
+    easing: 'easeOutBounce'
+  });
   
-  .text-gradient {
-    background: linear-gradient(90deg, #4361EE, #6366F1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .text-gradient::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, #4361EE, #6366F1);
-    opacity: 0.7;
-    border-radius: 2px;
-  }
-  
-  /* Button Hover Effects */
-  .hover-scale {
-    transition: transform 0.3s ease;
-  }
-  
-  .hover-scale:hover {
-    transform: scale(1.05);
-  }
-  
-  .hover-glow {
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
-  
-  .hover-glow:hover {
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
-    transform: translateY(-2px);
-  }
-  
-  /* Hero image styling */
-  .hero-static-image {
-    max-height: 650px;
-    width: auto;
-    margin-top: 20px;
-  }
-  
-  /* CTA Banner hover effect */
-  .cta-banner {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .cta-banner:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.15);
-  }
-  
-  /* Custom spacing utility classes */
-  .py-7 {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
-  }
-  
-  .mt-6 {
-    margin-top: 4rem !important;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 991.98px) {
-    .hero-static-image {
-      max-height: 500px;
+  // 2. Main solution (Cálculo Jurídico) appears
+  tl.add({
+    targets: '#calculo-juridico',
+    scale: [0, 1.2],
+    opacity: [0, 1],
+    duration: 600,
+    complete: function() {
+      anime({
+        targets: '#calculo-juridico',
+        scale: [1.2, 1],
+        duration: 200,
+        easing: 'easeOutQuad'
+      });
     }
+  }, '-=200');
+  
+  // 3. Main connection line
+  tl.add({
+    targets: '.main-connection',
+    strokeDashoffset: [100, 0],
+    opacity: [0, 0.8],
+    duration: 400,
+    easing: 'easeInOutQuad'
+  }, '-=200');
+  
+  // 4. Other solution nodes appear in sequence
+  tl.add({
+    targets: ['#edossie', '#chat-juridico', '#clientes-adv', '#advogados-aprovados'],
+    scale: [0, 1],
+    opacity: [0, 1],
+    duration: 500,
+    delay: anime.stagger(150)
+  }, '-=100');
+  
+  // 5. Other connection lines
+  tl.add({
+    targets: '.connection:not(.main-connection)',
+    strokeDashoffset: [100, 0],
+    opacity: [0, 0.6],
+    duration: 400,
+    delay: anime.stagger(100),
+    easing: 'easeInOutQuad'
+  }, '-=300');
+  
+  // 6. Particles appear
+  tl.add({
+    targets: '.particle',
+    scale: [0, 1],
+    opacity: [0, 0.6],
+    duration: 400,
+    delay: anime.stagger(80)
+  }, '-=200');
+  
+  // 7. Data flow dots
+  tl.add({
+    targets: '.flow-dot',
+    scale: [0, 1],
+    opacity: [0, 1],
+    duration: 300,
+    delay: anime.stagger(100)
+  }, '-=100');
+  
+  // Continuous animations
+  // Floating particles
+  anime({
+    targets: '.particle',
+    translateY: [0, -10, 0],
+    scale: [1, 1.2, 1],
+    duration: 3000,
+    delay: anime.stagger(500),
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+  
+  // Pulsing central hub
+  anime({
+    targets: '#central-hub circle',
+    scale: [1, 1.05, 1],
+    duration: 2000,
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+  
+  // Data flow animation
+  anime({
+    targets: '.flow-dot',
+    translateY: [0, -5, 0],
+    scale: [1, 1.3, 1],
+    opacity: [1, 0.5, 1],
+    duration: 1500,
+    delay: anime.stagger(300),
+    loop: true,
+    easing: 'easeInOutQuad'
+  });
+  
+  // Solution nodes hover effect simulation
+  setInterval(() => {
+    const nodes = ['.solution-node'];
+    const randomNode = nodes[0];
+    anime({
+      targets: randomNode + ':nth-child(' + (Math.floor(Math.random() * 5) + 1) + ') circle',
+      scale: [1, 1.1, 1],
+      duration: 800,
+      easing: 'easeInOutQuad'
+    });
+  }, 3000);
+});
+</script>
+
+<style>
+/* Hero Section Styles */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+}
+
+.hero-bg {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(67, 97, 238, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(99, 102, 241, 0.03) 0%, transparent 50%);
+}
+
+.hero-badge {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-title {
+  line-height: 1.1;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-description {
+  color: #475569 !important;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.text-dark-75 {
+  color: #475569 !important;
+}
+
+/* Button Animations */
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(67, 97, 238, 0.15);
+}
+
+/* Stats Animation */
+.hero-stats {
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.stat-item {
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+/* SVG Styles */
+.ecosystem-svg {
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.1));
+}
+
+.solution-node {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.solution-node:hover {
+  filter: brightness(1.1);
+}
+
+/* Background Decorations */
+.bg-decoration-1 {
+  background: radial-gradient(circle, rgba(67, 97, 238, 0.03) 0%, transparent 70%);
+  transform: translate(20%, -20%);
+}
+
+.bg-decoration-2 {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.03) 0%, transparent 70%);
+  transform: translate(-20%, 20%);
+}
+
+/* CTA Banner */
+.cta-banner {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
+.cta-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(67, 97, 238, 0.1) !important;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 2.5rem;
   }
+  
+  .ecosystem-svg {
+    height: 400px;
+  }
+  
+  .hero-section {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom spacing */
+.py-7 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
 </style>
