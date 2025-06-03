@@ -1,14 +1,11 @@
 - name: Início
   link: /
-- name: Fundos de Investimento
-  link: /#investment
-- name: Ativos Judiciais
-  link: /#resources
-- name: Vantagens
-  link: /#advantages
+- name: Ecossistema
+  link: /#ecosystem
+- name: Cálculo Jurídico
+  link: https://calculojuridico.com.br
+  external: true
 - name: Blog
   link: /blog/
-- name: Autores
-  link: /autores/
 - name: Contato
   link: /#contact

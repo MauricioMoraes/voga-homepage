@@ -1,12 +1,20 @@
-# Rhilo Investimentos - Website
+# Voga - Ecossistema de Soluções Tecnológicas para Advogados
 
-![Rhilo Logo](/assets/images/logo.svg)
+![Voga Logo](/assets/images/logo.svg)
 
 ## Sobre o Projeto
 
-Rhilo Investimentos é um fundo de investimentos especializado em ativos judiciais, oferecendo soluções inovadoras para investidores que buscam diversificação e rentabilidade, além de soluções para advogados e seus clientes que desejam antecipar o recebimento de seus ativos judiciais.
+A **Voga** é um hub de soluções tecnológicas desenvolvido especificamente para advogados, oferecendo um ecossistema completo de ferramentas que permitem aos escritórios de advocacia faturar mais com maior eficiência. 
 
-Este repositório contém o código-fonte do site institucional da Rhilo Investimentos, construído com Jekyll - um gerador de sites estáticos.
+A principal solução da Voga é o **Cálculo Jurídico** ([calculojuridico.com.br](https://calculojuridico.com.br)), que foi o início da empresa e continua sendo o carro-chefe das soluções oferecidas. Além disso, o ecossistema Voga inclui outras soluções especializadas:
+
+- **[calculojuridico.com.br](https://calculojuridico.com.br)** - Solução principal de cálculos jurídicos
+- **[edossie.com.br](https://edossie.com.br)** - Gestão de dossiês e documentos
+- **[chatjuridico.com.br](https://chatjuridico.com.br)** - Assistente jurídico com IA
+- **[clientes.adv.br](https://clientes.adv.br)** - Gestão de relacionamento com clientes
+- **[advogadosaprovados.com.br](https://advogadosaprovados.com.br)** - Plataforma de capacitação
+
+Este repositório contém o código-fonte do site institucional da Voga, construído com Jekyll - um gerador de sites estáticos.
 
 ## 📋 Índice
 
@@ -23,17 +31,17 @@ Este repositório contém o código-fonte do site institucional da Rhilo Investi
 
 ## 🔍 Visão Geral
 
-O site da Rhilo Investimentos foi desenvolvido com foco em:
+O site da Voga foi desenvolvido com foco em:
 
-1. **Apresentação do Fundo de Investimentos**: Destaque para os produtos de investimento em ativos judiciais, com informações sobre rentabilidade, risco e vantagens.
+1. **Apresentação do Ecossistema**: Destaque para o Cálculo Jurídico como solução principal e apresentação das demais ferramentas do ecossistema Voga.
 
-2. **Educação sobre Ativos Judiciais**: Explicação sobre o que são ativos judiciais e como funciona o mercado de investimentos nesse segmento.
+2. **Hub de Soluções para Advogados**: Posicionamento da Voga como o local onde advogados encontram todas as ferramentas tecnológicas necessárias para modernizar e otimizar seus escritórios.
 
-3. **Antecipação de Créditos**: Informações direcionadas a advogados e seus clientes sobre como antecipar o recebimento de ativos judiciais.
+3. **Educação sobre Tecnologia Jurídica**: Explicação sobre como a tecnologia e IA podem transformar a prática jurídica e aumentar a eficiência dos escritórios.
 
-4. **Blog Especializado**: Artigos sobre investimentos, ativos judiciais e o mercado financeiro-jurídico.
+4. **Blog Especializado**: Artigos sobre tecnologia jurídica, gestão de escritórios, automação de processos e inovação no direito.
 
-5. **Geração de Leads**: Captação de contatos tanto de investidores interessados no fundo quanto de advogados/clientes com créditos judiciais.
+5. **Geração de Leads**: Captação de advogados interessados em modernizar seus escritórios com as soluções do ecossistema Voga.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -41,7 +49,7 @@ O site da Rhilo Investimentos foi desenvolvido com foco em:
 - **Bootstrap 5**: Framework CSS para desenvolvimento responsivo
 - **Sass/SCSS**: Pré-processador CSS para estilização avançada
 - **Font Awesome**: Biblioteca de ícones
-- **Chart.js**: Biblioteca para gráficos e visualizações
+- **JavaScript**: Animações e interatividade
 - **Docker**: Containerização para desenvolvimento consistente
 - **Vercel**: Plataforma de deploy e hospedagem
 
@@ -67,8 +75,8 @@ O projeto está configurado para ser executado em um ambiente containerizado com
 
 1. **Clone o repositório**:
    ```bash
-   git clone git@github.com:CalculoJuridico/rhilo-homepage.git
-   cd rhilo-homepage
+   git clone [URL_DO_REPOSITORIO]
+   cd voga-homepage
    ```
 
 2. **Iniciar com o script de execução simples**:
@@ -82,7 +90,7 @@ O projeto está configurado para ser executado em um ambiente containerizado com
 
 ### Usando Docker Compose (Para desenvolvimento)
 
-Para um ambiente de desenvolvimento mais completo, você pode usar o Docker Compose:
+Para um ambiente de desenvolvimento mais completo:
 
 1. **Construir e iniciar os containers**:
    ```bash
@@ -105,8 +113,8 @@ Se preferir executar o projeto localmente sem Docker:
 
 1. **Clone o repositório**:
    ```bash
-   git clone git@github.com:CalculoJuridico/rhilo-homepage.git
-   cd rhilo-homepage
+   git clone [URL_DO_REPOSITORIO]
+   cd voga-homepage
    ```
 
 2. **Instale as dependências**:
@@ -124,41 +132,37 @@ Se preferir executar o projeto localmente sem Docker:
 
 ## 📁 Estrutura do Projeto
 
-O projeto segue a estrutura padrão do Jekyll com algumas personalizações:
+O projeto segue a estrutura padrão do Jekyll com personalizações para o ecossistema Voga:
 
 ```
-rhilo-homepage/
+voga-homepage/
 ├── _authors/            # Perfis de autores do blog
 ├── _data/               # Arquivos de dados em YAML (navegação, rodapé, etc.)
 ├── _includes/           # Componentes reutilizáveis HTML
 │   ├── navigation.html  # Menu de navegação
 │   ├── footer.html      # Rodapé do site
 │   ├── hero.html        # Banner principal da página inicial
-│   ├── investment-funds.html # Seção de fundos de investimento
-│   ├── resources.html   # Seção de ativos judiciais
+│   ├── venture-builder.html # Seção do ecossistema Voga
+│   ├── investment-funds.html # Seção de soluções
 │   └── ...
 ├── _layouts/            # Templates de layout
 │   ├── default.html     # Layout base
 │   ├── home.html        # Layout da página inicial
 │   ├── post.html        # Layout para posts do blog
-│   ├── page.html        # Layout para páginas simples
 │   └── ...
 ├── _posts/              # Artigos do blog
 ├── _sass/               # Arquivos de estilo SCSS
 ├── assets/              # Recursos estáticos
 │   ├── css/             # Arquivos CSS compilados
-│   ├── js/              # Scripts JavaScript
+│   ├── js/              # Scripts JavaScript e animações
 │   ├── images/          # Imagens do site
 │   └── ...
-├── docs/                # Documentação do projeto
-│   └── articles/        # Conteúdo extraído de artigos relevantes
 ├── pages/               # Páginas principais do site
 ├── _config.yml          # Configuração principal do Jekyll
 ├── Gemfile              # Dependências Ruby
 ├── docker-compose.yml   # Configuração do Docker Compose
 ├── Dockerfile           # Configuração do Docker
-├── fetch_articles.rb    # Script para extração de conteúdo
-└── fetch_migalhas.sh    # Script para executar extração via Docker
+└── vercel.json          # Configuração para deploy no Vercel
 ```
 
 ## 🎨 Personalização e Desenvolvimento
@@ -171,32 +175,15 @@ O menu de navegação é controlado pelo arquivo `_data/navigation.yml`. Para ad
 # _data/navigation.yml
 - name: Início
   link: /
-- name: Fundos de Investimento
-  link: /#investment
-- name: Ativos Judiciais
-  link: /#resources
-# Adicione novos itens abaixo
+- name: Soluções
+  link: /#solutions
+- name: Blog
+  link: /blog
 ```
 
 ### Rodapé
 
-O rodapé é controlado pelo arquivo `_data/footer.yml`. Aqui você pode personalizar:
-
-```yaml
-# _data/footer.yml
-copyright: "© 2025 Rhilo Investimentos LTDA. Todos os direitos reservados."
-socials:
-  - name: LinkedIn
-    icon: fab fa-linkedin
-    link: https://linkedin.com/
-  # Adicione novas redes sociais aqui
-
-links:
-  - title: Investimentos
-    items:
-      - name: Fundos de Investimento
-        link: /#investment
-```
+O rodapé é controlado pelo arquivo `_data/footer.yml` e inclui links para todas as soluções do ecossistema Voga.
 
 ### Estilização
 
@@ -204,46 +191,39 @@ O projeto utiliza Sass/SCSS para estilização. O arquivo principal é `assets/c
 
 Para modificar cores, fontes e outros aspectos visuais:
 
-1. Edite as variáveis no início do arquivo:
-   ```css
-   :root {
-     --primary-color: #4A6FFF;
-     --secondary-color: #6C757D;
-     --light-color: #F8F9FA;
-     --dark-color: #212529;
-     --accent-color: #10B981;
-   }
-   ```
-
-2. Adicione novos estilos nas seções apropriadas ou crie novos arquivos CSS.
+```css
+:root {
+  --primary-color: #4A6FFF;
+  --secondary-color: #6C757D;
+  --light-color: #F8F9FA;
+  --dark-color: #212529;
+  --accent-color: #10B981;
+}
+```
 
 ## 📝 Sistema de Blog
 
 ### Adicionar Novo Post
 
-1. Crie um arquivo na pasta `_posts` seguindo o formato de nomenclatura: `YYYY-MM-DD-titulo-do-post.md`
+1. Crie um arquivo na pasta `_posts` seguindo o formato: `YYYY-MM-DD-titulo-do-post.md`
 
-2. Adicione o cabeçalho YAML no início do arquivo:
+2. Adicione o cabeçalho YAML:
    ```yaml
    ---
    layout: post
    title: "Título do Post"
    author: nome-do-autor
    date: YYYY-MM-DD HH:MM:SS -0300
-   categories: [Categoria1, Categoria2]
-   tags: [tag1, tag2, tag3]
+   categories: [Tecnologia, Advocacia]
+   tags: [automacao, ia, gestao]
    image: /assets/images/posts/imagem.jpg
-   description: "Breve descrição do post para SEO (150-160 caracteres)."
+   description: "Descrição do post para SEO."
    ---
-
-   Conteúdo do post em Markdown aqui...
    ```
-
-3. Escreva o conteúdo do post utilizando a sintaxe Markdown.
 
 ### Adicionar Novo Autor
 
-1. Crie um arquivo na pasta `_authors` com o nome do autor: `nome-do-autor.md`
+1. Crie um arquivo na pasta `_authors`: `nome-do-autor.md`
 
 2. Adicione o cabeçalho YAML:
    ```yaml
@@ -252,80 +232,75 @@ Para modificar cores, fontes e outros aspectos visuais:
    display_name: Nome Completo
    position: Cargo ou Título
    avatar: /assets/images/authors/nome-do-autor.jpg
-   bio: Biografia breve do autor (1-2 parágrafos).
-   linkedin: https://linkedin.com/in/nome-do-autor
-   website: https://site-do-autor.com.br
+   bio: Biografia do autor.
    ---
    ```
 
 ## 🚀 Implantação
 
-### Preparação para Produção
+### Deploy no Vercel (Recomendado)
 
-Antes de implantar para produção:
+O projeto está configurado para deploy automático no Vercel:
 
-1. **Verifique o SEO**:
-   - Todas as páginas devem ter title, description e imagens adequadas
-   - Links internos devem estar funcionando
-   - Sitemap deve estar atualizado
-
-2. **Otimize para Performance**:
-   - Comprima imagens
-   - Verifique o carregamento de scripts
-   - Teste em diferentes dispositivos e tamanhos de tela
-
-### Implantação no Vercel (Recomendado)
-
-O projeto está configurado para ser facilmente implantado no Vercel, com o arquivo `vercel.json` já incluído.
-
-1. Faça push do código para o GitHub:
+1. **Faça push para o repositório**:
    ```bash
+   git add .
+   git commit -m "Atualização do site Voga"
    git push origin master
    ```
 
-2. Vincule o repositório ao Vercel:
-   - Acesse o [Dashboard do Vercel](https://vercel.com/dashboard)
-   - Importe o repositório do GitHub
-   - Mantenha as configurações padrão e clique em "Deploy"
+2. **Configure o projeto no Vercel**:
+   - Vincule o repositório ao Vercel
+   - Configure o domínio personalizado (voga.adv.br)
 
-3. Configure um domínio personalizado:
-   - No dashboard do Vercel, acesse o projeto
-   - Vá para "Settings" > "Domains"
-   - Adicione seu domínio personalizado (ex: rhilo.adv.br)
-   - Siga as instruções para configurar os registros DNS
+### Deploy Manual
+
+Para deploy manual em outros serviços:
+
+1. **Gere o site estático**:
+   ```bash
+   bundle exec jekyll build
+   ```
+
+2. **Os arquivos estarão na pasta `_site/`** prontos para upload
 
 ## 📊 Funcionalidades Implementadas
 
-### Gráficos e Visualizações
+### Animações Interativas
 
-O site utiliza a biblioteca Chart.js para criar visualizações de dados interativas:
+O site inclui animações JavaScript personalizadas para:
+- Apresentação do ecossistema Voga
+- Demonstração das soluções
+- Efeitos visuais de transição
 
-1. **Gráfico de Performance Comparativa**: Compara o desempenho do fundo Rhilo com outros índices de mercado (CDI e Ibovespa).
+### Seções Principais
 
-2. **Gráfico de Distribuição de Ativos**: Mostra a composição do portfólio do fundo por tipo de ativo judicial.
+1. **Hero Section**: Apresentação da Voga como ecossistema
+2. **Cálculo Jurídico**: Destaque da solução principal
+3. **Ecossistema de Soluções**: Apresentação de todas as ferramentas
+4. **Blog Técnico**: Artigos sobre tecnologia jurídica
+5. **Formulários de Contato**: Captação de leads
 
-Para modificar ou adicionar novos gráficos:
+### Integração com Soluções
 
-1. Localize os scripts Chart.js nas seções correspondentes.
-2. Edite os dados, opções e configurações conforme necessário.
+O site serve como hub central que direciona para todas as soluções do ecossistema:
+- Links diretos para cada plataforma
+- Descrições detalhadas de funcionalidades
+- Cases de uso e benefícios
 
-### Timeline e Processo de Investimento
+## 🔗 Links Importantes
 
-Foi implementada uma timeline visual que explica o processo de investimento em ativos judiciais, desde a prospecção até a gestão do portfólio. Esta funcionalidade encontra-se na seção de fundos de investimento.
-
-### Formulário de Contato
-
-O formulário de contato está integrado e configurado para captar leads tanto de investidores quanto de advogados/clientes com créditos judiciais.
-
-### Scripts de Extração de Conteúdo
-
-O projeto inclui scripts para extração de conteúdo relevante de artigos do Migalhas:
-
-- `fetch_articles.rb`: Script Ruby para extração de conteúdo.
-- `fetch_migalhas.sh`: Shell script para executar a extração via Docker.
-
-Estes scripts são úteis para manter o site atualizado com informações relevantes sobre o mercado de ativos judiciais.
+- **Site Principal**: [voga.adv.br](https://voga.adv.br)
+- **Cálculo Jurídico**: [calculojuridico.com.br](https://calculojuridico.com.br)
+- **E-Dossie**: [edossie.com.br](https://edossie.com.br)
+- **Chat Jurídico**: [chatjuridico.com.br](https://chatjuridico.com.br)
+- **Clientes ADV**: [clientes.adv.br](https://clientes.adv.br)
+- **Advogados Aprovados**: [advogadosaprovados.com.br](https://advogadosaprovados.com.br)
 
 ## 📝 Licença
 
-Copyright © 2025 Rhilo Investimentos LTDA. Todos os direitos reservados.
+Copyright © 2025 Voga. Todos os direitos reservados.
+
+---
+
+**Voga - Transformando a advocacia através da tecnologia**

@@ -1,33 +1,38 @@
-copyright: "© 2025 Rhilo Investimentos LTDA. Todos os direitos reservados."
+copyright: "© 2025 Voga. Todos os direitos reservados."
 socials:
   - name: LinkedIn
     icon: fab fa-linkedin
-    link: https://linkedin.com/
+    link: https://linkedin.com/company/voga-adv/
   - name: Instagram
     icon: fab fa-instagram
-    link: https://instagram.com/
+    link: https://instagram.com/voga.adv/
   - name: YouTube
     icon: fab fa-youtube
-    link: https://youtube.com/
+    link: https://youtube.com/@voga-adv/
 
 links:
-  - title: Investimentos
+  - title: Soluções Principais
     items:
-      - name: Fundos de Investimento
-        link: /#investment
-      - name: Ativos Judiciais
-        link: /#resources
-      - name: Performance
-        link: /#investment
+      - name: Cálculo Jurídico
+        link: https://calculojuridico.com.br
+        external: true
+      - name: E-Dossie
+        link: https://edossie.com.br
+        external: true
+      - name: Chat Jurídico
+        link: https://chatjuridico.com.br
+        external: true
   
-  - title: Para Advogados
+  - title: Ferramentas Adicionais
     items:
-      - name: Antecipação de Honorários
-        link: /#resources
-      - name: Cessão de Créditos
-        link: /#resources
-      - name: Empréstimo Garantido
-        link: /#contact
+      - name: Clientes ADV
+        link: https://clientes.adv.br
+        external: true
+      - name: Advogados Aprovados
+        link: https://advogadosaprovados.com.br
+        external: true
+      - name: Ecossistema Completo
+        link: /#ecosystem
   
   - title: Informações
     items:
