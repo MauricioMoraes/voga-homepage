@@ -1,0 +1,33 @@
+steps:
+  # Install Ruby dependencies
+  - name: 'ruby:3.2'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gem install bundler
+        bundle install
+
+  # Build Jekyll site
+  - name: 'ruby:3.2'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        bundle exec jekyll build --trace
+    env:
+      - 'JEKYLL_ENV=production'
+
+  # Deploy to Firebase Hosting
+  - name: 'gcr.io/cloud-builders/firebase'
+    args: ['deploy', '--project=${PROJECT_ID}']
+
+# Specify timeout
+timeout: '1200s'
+
+# Define substitutions
+substitutions:
+  _FIREBASE_PROJECT_ID: 'voga-adv'
+
+options:
+  logging: CLOUD_LOGGING_ONLY

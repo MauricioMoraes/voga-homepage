@@ -51,6 +51,7 @@ O site da Voga foi desenvolvido com foco em:
 - **Font Awesome**: Biblioteca de ícones
 - **JavaScript**: Animações e interatividade
 - **Docker**: Containerização para desenvolvimento consistente
+- **Google Cloud Build**: CI/CD para build automático
 - **Firebase Hosting**: Plataforma de deploy e hospedagem
 
 ## 📋 Requisitos
@@ -66,6 +67,11 @@ Para desenvolvimento local:
 Para ambiente containerizado:
 - Docker
 - Docker Compose
+
+Para deploy automático:
+- Google Cloud CLI (`gcloud`)
+- Projeto configurado no Firebase
+- Permissões no Google Cloud Build
 
 ## 🚀 Instalação e Configuração
 
@@ -162,6 +168,7 @@ voga-homepage/
 ├── Gemfile              # Dependências Ruby
 ├── docker-compose.yml   # Configuração do Docker Compose
 ├── Dockerfile           # Configuração do Docker
+├── cloudbuild.yaml      # Configuração do Google Cloud Build
 └── firebase.json        # Configuração para deploy no Firebase
 ```
 
@@ -238,21 +245,33 @@ Para modificar cores, fontes e outros aspectos visuais:
 
 ## 🚀 Implantação
 
-### Deploy no Firebase Hosting (Automático)
+### Deploy no Firebase Hosting via Cloud Build (Automático)
 
-O projeto está configurado para deploy automático no Firebase Hosting:
+O projeto está configurado para deploy automático usando Google Cloud Build + Firebase Hosting:
 
-1. **Faça push para o repositório**:
+1. **Configuração inicial** (uma vez):
+   ```bash
+   # Configure o projeto no Google Cloud
+   gcloud config set project voga-adv
+   
+   # Conecte o repositório ao Cloud Build
+   gcloud builds triggers create github \
+     --repo-name=voga-homepage \
+     --repo-owner=MauricioMoraes \
+     --branch-pattern=^master$ \
+     --build-config=cloudbuild.yaml
+   ```
+
+2. **Deploy automático**:
    ```bash
    git add .
    git commit -m "Atualização do site Voga"
    git push origin master
    ```
-
-2. **Deploy automático**:
-   - O deploy é automático via Firebase Hosting
+   - Cloud Build detecta o push automaticamente
+   - Executa build do Jekyll
+   - Deploy automático para Firebase Hosting
    - Site disponível em voga.adv.br
-   - Build automático do Jekyll
 
 ### Deploy Manual
 
