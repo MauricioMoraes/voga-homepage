@@ -95,14 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Logo animation in navigation
-    anime({
-        targets: '.navbar-logo',
-        rotate: [0, 360],
-        duration: 1000,
-        easing: 'easeOutCubic',
-        delay: 100
-    });
+    // Logo static - no animation
     
     // Gradient text animation
     const gradientText = document.querySelector('.text-gradient');
