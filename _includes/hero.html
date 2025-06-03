@@ -72,81 +72,154 @@
         </div>
       </div>
       
-      <!-- Animated Diagram -->
+      <!-- Futuristic Animated Diagram -->
       <div class="col-lg-6">
         <div class="hero-diagram position-relative">
           <svg width="100%" height="500" viewBox="0 0 500 500" class="ecosystem-svg">
-            <!-- Central Hub -->
+            <!-- Background grid -->
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(67, 97, 238, 0.1)" stroke-width="0.5"/>
+              </pattern>
+              <linearGradient id="hubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#4361EE;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="nodeGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="nodeGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="nodeGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="nodeGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="nodeGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge> 
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            
+            <!-- Grid background -->
+            <rect width="100%" height="100%" fill="url(#grid)" opacity="0.3"/>
+            
+            <!-- Central Hub with hexagonal design -->
             <g id="central-hub">
-              <circle cx="250" cy="250" r="80" fill="#4361EE" opacity="0.9" stroke="#fff" stroke-width="3"/>
-              <text x="250" y="240" text-anchor="middle" fill="white" font-size="14" font-weight="bold">VOGA</text>
-              <text x="250" y="260" text-anchor="middle" fill="white" font-size="12">Hub Central</text>
+              <!-- Outer hexagon -->
+              <polygon points="250,170 290,190 290,230 250,250 210,230 210,190" 
+                       fill="none" stroke="url(#hubGradient)" stroke-width="2" opacity="0.3" class="hub-outline"/>
+              <!-- Inner circle -->
+              <circle cx="250" cy="210" r="45" fill="url(#hubGradient)" opacity="0.95" filter="url(#glow)"/>
+              <!-- Tech pattern overlay -->
+              <circle cx="250" cy="210" r="35" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="5,5" class="tech-ring"/>
+              <circle cx="250" cy="210" r="25" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="3,3" class="tech-ring-inner"/>
+              <!-- Central logo/text -->
+              <text x="250" y="202" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial, sans-serif">VOGA</text>
+              <text x="250" y="218" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9" font-family="Arial, sans-serif">AI ECOSYSTEM</text>
             </g>
             
-            <!-- Solution Nodes -->
+            <!-- Solution Nodes with modern design -->
             <g id="solution-nodes">
-              <!-- Cálculo Jurídico - Main Solution -->
+              <!-- Cálculo Jurídico - Main Solution (Top) -->
               <g id="calculo-juridico" class="solution-node main-solution">
-                <circle cx="250" cy="120" r="45" fill="#10B981" stroke="#fff" stroke-width="2"/>
-                <text x="250" y="115" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Cálculo</text>
-                <text x="250" y="128" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Jurídico</text>
+                <circle cx="250" cy="80" r="40" fill="url(#nodeGradient1)" filter="url(#glow)"/>
+                <circle cx="250" cy="80" r="30" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <circle cx="250" cy="80" r="20" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="2,2" class="rotating-ring"/>
+                <text x="250" y="75" text-anchor="middle" fill="white" font-size="9" font-weight="bold">CÁLCULO</text>
+                <text x="250" y="86" text-anchor="middle" fill="white" font-size="9" font-weight="bold">JURÍDICO</text>
+                <!-- AI indicator -->
+                <circle cx="275" cy="65" r="6" fill="#FFF" opacity="0.9"/>
+                <text x="275" y="68" text-anchor="middle" fill="#10B981" font-size="8" font-weight="bold">AI</text>
               </g>
               
-              <!-- E-Dossie -->
+              <!-- E-Dossie (Top Right) -->
               <g id="edossie" class="solution-node">
-                <circle cx="400" cy="180" r="35" fill="#6366F1" stroke="#fff" stroke-width="2"/>
-                <text x="400" y="180" text-anchor="middle" fill="white" font-size="9" font-weight="bold">E-Dossie</text>
+                <circle cx="380" cy="140" r="32" fill="url(#nodeGradient2)" filter="url(#glow)"/>
+                <circle cx="380" cy="140" r="22" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <circle cx="380" cy="140" r="15" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="1,1" class="rotating-ring"/>
+                <text x="380" y="136" text-anchor="middle" fill="white" font-size="8" font-weight="bold">E-DOSSIE</text>
+                <text x="380" y="146" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="6">DOCS</text>
               </g>
               
-              <!-- Chat Jurídico -->
+              <!-- Chat Jurídico (Bottom Right) -->
               <g id="chat-juridico" class="solution-node">
-                <circle cx="420" cy="320" r="35" fill="#8B5CF6" stroke="#fff" stroke-width="2"/>
-                <text x="420" y="315" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Chat</text>
-                <text x="420" y="328" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Jurídico</text>
+                <circle cx="380" cy="280" r="32" fill="url(#nodeGradient3)" filter="url(#glow)"/>
+                <circle cx="380" cy="280" r="22" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <circle cx="380" cy="280" r="15" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="1,1" class="rotating-ring"/>
+                <text x="380" y="276" text-anchor="middle" fill="white" font-size="8" font-weight="bold">CHAT AI</text>
+                <text x="380" y="286" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="6">LEGAL</text>
               </g>
               
-              <!-- Clientes ADV -->
+              <!-- Clientes ADV (Bottom Left) -->
               <g id="clientes-adv" class="solution-node">
-                <circle cx="100" cy="320" r="35" fill="#06B6D4" stroke="#fff" stroke-width="2"/>
-                <text x="100" y="315" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Clientes</text>
-                <text x="100" y="328" text-anchor="middle" fill="white" font-size="8" font-weight="bold">ADV</text>
+                <circle cx="120" cy="280" r="32" fill="url(#nodeGradient4)" filter="url(#glow)"/>
+                <circle cx="120" cy="280" r="22" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <circle cx="120" cy="280" r="15" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="1,1" class="rotating-ring"/>
+                <text x="120" y="276" text-anchor="middle" fill="white" font-size="8" font-weight="bold">CLIENTES</text>
+                <text x="120" y="286" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="6">CRM</text>
               </g>
               
-              <!-- Advogados Aprovados -->
+              <!-- Advogados Aprovados (Top Left) -->
               <g id="advogados-aprovados" class="solution-node">
-                <circle cx="80" cy="180" r="35" fill="#F59E0B" stroke="#fff" stroke-width="2"/>
-                <text x="80" y="175" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Advogados</text>
-                <text x="80" y="188" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Aprovados</text>
+                <circle cx="120" cy="140" r="32" fill="url(#nodeGradient5)" filter="url(#glow)"/>
+                <circle cx="120" cy="140" r="22" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <circle cx="120" cy="140" r="15" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="1,1" class="rotating-ring"/>
+                <text x="120" y="136" text-anchor="middle" fill="white" font-size="7" font-weight="bold">EDUCAÇÃO</text>
+                <text x="120" y="146" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="6">LEGAL</text>
               </g>
             </g>
             
-            <!-- Connection Lines -->
-            <g id="connections" stroke="#4361EE" stroke-width="2" opacity="0.6">
-              <!-- Main solution connection -->
-              <line x1="250" y1="170" x2="250" y2="205" class="connection main-connection"/>
+            <!-- Futuristic Connection Lines -->
+            <g id="connections" stroke-width="2" opacity="0.6">
+              <!-- Main solution connection with gradient -->
+              <line x1="250" y1="120" x2="250" y2="165" stroke="url(#nodeGradient1)" stroke-width="3" class="connection main-connection"/>
               
-              <!-- Other connections -->
-              <line x1="290" y1="210" x2="365" y2="180" class="connection"/>
-              <line x1="320" y1="280" x2="385" y2="320" class="connection"/>
-              <line x1="180" y1="280" x2="135" y2="320" class="connection"/>
-              <line x1="210" y1="210" x2="115" y2="180" class="connection"/>
+              <!-- Neural network style connections -->
+              <path d="M 290 190 Q 335 165 348 140" stroke="url(#nodeGradient2)" stroke-width="2" fill="none" class="connection"/>
+              <path d="M 290 230 Q 335 255 348 280" stroke="url(#nodeGradient3)" stroke-width="2" fill="none" class="connection"/>
+              <path d="M 210 230 Q 165 255 152 280" stroke="url(#nodeGradient4)" stroke-width="2" fill="none" class="connection"/>
+              <path d="M 210 190 Q 165 165 152 140" stroke="url(#nodeGradient5)" stroke-width="2" fill="none" class="connection"/>
             </g>
             
-            <!-- Floating particles -->
-            <g id="particles">
-              <circle cx="150" cy="100" r="3" fill="#4361EE" opacity="0.6" class="particle"/>
-              <circle cx="350" cy="90" r="2" fill="#10B981" opacity="0.5" class="particle"/>
-              <circle cx="450" cy="150" r="2.5" fill="#6366F1" opacity="0.6" class="particle"/>
-              <circle cx="50" cy="250" r="3" fill="#8B5CF6" opacity="0.5" class="particle"/>
-              <circle cx="430" cy="400" r="2" fill="#06B6D4" opacity="0.6" class="particle"/>
-              <circle cx="120" cy="420" r="2.5" fill="#F59E0B" opacity="0.5" class="particle"/>
+            <!-- Data packets flowing -->
+            <g id="data-packets">
+              <circle cx="250" cy="140" r="3" fill="#FFF" opacity="0.8" class="data-packet"/>
+              <circle cx="300" cy="180" r="2" fill="#10B981" opacity="0.6" class="data-packet"/>
+              <circle cx="200" cy="180" r="2" fill="#6366F1" opacity="0.6" class="data-packet"/>
+              <circle cx="300" cy="240" r="2" fill="#8B5CF6" opacity="0.6" class="data-packet"/>
+              <circle cx="200" cy="240" r="2" fill="#06B6D4" opacity="0.6" class="data-packet"/>
             </g>
             
-            <!-- Data flow indicators -->
-            <g id="data-flow">
-              <circle cx="250" cy="190" r="4" fill="#4361EE" class="flow-dot"/>
-              <circle cx="320" cy="200" r="3" fill="#10B981" class="flow-dot"/>
-              <circle cx="180" cy="200" r="3" fill="#6366F1" class="flow-dot"/>
+            <!-- Floating holographic elements -->
+            <g id="holo-elements">
+              <polygon points="100,60 110,60 105,50" fill="rgba(67, 97, 238, 0.3)" class="holo-triangle"/>
+              <rect x="390" y="50" width="8" height="8" fill="rgba(16, 185, 129, 0.3)" class="holo-square"/>
+              <polygon points="400,350 410,360 390,360" fill="rgba(99, 102, 241, 0.3)" class="holo-triangle"/>
+              <circle cx="90" cy="350" r="4" fill="rgba(139, 92, 246, 0.3)" class="holo-circle"/>
+              <rect x="50" y="380" width="6" height="12" fill="rgba(6, 182, 212, 0.3)" class="holo-bar"/>
+              <polygon points="450,380 460,390 440,390" fill="rgba(245, 158, 11, 0.3)" class="holo-triangle"/>
+            </g>
+            
+            <!-- Neural activity indicators -->
+            <g id="neural-activity">
+              <circle cx="320" cy="120" r="2" fill="#FFF" opacity="0" class="neural-pulse"/>
+              <circle cx="180" cy="120" r="2" fill="#FFF" opacity="0" class="neural-pulse"/>
+              <circle cx="320" cy="300" r="2" fill="#FFF" opacity="0" class="neural-pulse"/>
+              <circle cx="180" cy="300" r="2" fill="#FFF" opacity="0" class="neural-pulse"/>
             </g>
           </svg>
         </div>
@@ -188,132 +261,246 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Initial setup - hide elements
   anime.set('.solution-node', { scale: 0, opacity: 0 });
-  anime.set('.connection', { strokeDasharray: '5 5', strokeDashoffset: 100, opacity: 0 });
-  anime.set('.particle', { scale: 0, opacity: 0 });
-  anime.set('.flow-dot', { scale: 0, opacity: 0 });
+  anime.set('.connection', { strokeDasharray: '10 10', strokeDashoffset: 100, opacity: 0 });
+  anime.set('.data-packet', { scale: 0, opacity: 0 });
+  anime.set('.holo-elements > *', { scale: 0, opacity: 0 });
   anime.set('#central-hub', { scale: 0, opacity: 0 });
+  anime.set('.neural-pulse', { scale: 0, opacity: 0 });
   
-  // Animation timeline
+  // Main animation timeline
   const tl = anime.timeline({
-    easing: 'easeOutElastic(1, .8)',
-    duration: 800
+    easing: 'easeOutCubic',
+    duration: 1000
   });
   
-  // 1. Central hub appears
+  // 1. Grid materializes
+  tl.add({
+    targets: 'rect[fill="url(#grid)"]',
+    opacity: [0, 0.3],
+    duration: 800,
+    easing: 'easeInOutQuad'
+  });
+  
+  // 2. Central hub materializes with tech effect
   tl.add({
     targets: '#central-hub',
     scale: [0, 1],
     opacity: [0, 1],
-    duration: 1000,
-    easing: 'easeOutBounce'
-  });
+    duration: 1200,
+    easing: 'easeOutElastic(1, 0.6)'
+  }, '-=400');
   
-  // 2. Main solution (Cálculo Jurídico) appears
+  // 3. Main solution appears with special emphasis
   tl.add({
     targets: '#calculo-juridico',
-    scale: [0, 1.2],
+    scale: [0, 1.3],
     opacity: [0, 1],
-    duration: 600,
+    duration: 800,
     complete: function() {
       anime({
         targets: '#calculo-juridico',
-        scale: [1.2, 1],
-        duration: 200,
-        easing: 'easeOutQuad'
+        scale: [1.3, 1],
+        duration: 300,
+        easing: 'easeOutBack'
       });
     }
-  }, '-=200');
+  }, '-=600');
   
-  // 3. Main connection line
+  // 4. Main connection draws
   tl.add({
     targets: '.main-connection',
     strokeDashoffset: [100, 0],
-    opacity: [0, 0.8],
-    duration: 400,
-    easing: 'easeInOutQuad'
-  }, '-=200');
+    opacity: [0, 1],
+    duration: 600,
+    easing: 'easeInOutQuart'
+  }, '-=400');
   
-  // 4. Other solution nodes appear in sequence
+  // 5. Other nodes appear in neural network pattern
   tl.add({
     targets: ['#edossie', '#chat-juridico', '#clientes-adv', '#advogados-aprovados'],
     scale: [0, 1],
     opacity: [0, 1],
-    duration: 500,
-    delay: anime.stagger(150)
-  }, '-=100');
+    duration: 600,
+    delay: anime.stagger(120, {start: 200}),
+    easing: 'easeOutBack'
+  }, '-=300');
   
-  // 5. Other connection lines
+  // 6. Neural connections form
   tl.add({
     targets: '.connection:not(.main-connection)',
     strokeDashoffset: [100, 0],
-    opacity: [0, 0.6],
-    duration: 400,
-    delay: anime.stagger(100),
-    easing: 'easeInOutQuad'
-  }, '-=300');
-  
-  // 6. Particles appear
-  tl.add({
-    targets: '.particle',
-    scale: [0, 1],
-    opacity: [0, 0.6],
-    duration: 400,
-    delay: anime.stagger(80)
+    opacity: [0, 0.8],
+    duration: 500,
+    delay: anime.stagger(80),
+    easing: 'easeInOutQuart'
   }, '-=200');
   
-  // 7. Data flow dots
+  // 7. Data packets appear
   tl.add({
-    targets: '.flow-dot',
+    targets: '.data-packet',
     scale: [0, 1],
-    opacity: [0, 1],
+    opacity: [0, 0.8],
+    duration: 400,
+    delay: anime.stagger(60)
+  }, '-=100');
+  
+  // 8. Holographic elements materialize
+  tl.add({
+    targets: '.holo-elements > *',
+    scale: [0, 1],
+    opacity: [0, 0.6],
     duration: 300,
+    delay: anime.stagger(50),
+    easing: 'easeOutBack'
+  }, '-=200');
+  
+  // 9. Neural pulses activate
+  tl.add({
+    targets: '.neural-pulse',
+    scale: [0, 1],
+    opacity: [0, 0.4],
+    duration: 200,
     delay: anime.stagger(100)
   }, '-=100');
   
-  // Continuous animations
-  // Floating particles
+  // Continuous futuristic animations
+  
+  // Rotating tech rings
   anime({
-    targets: '.particle',
-    translateY: [0, -10, 0],
-    scale: [1, 1.2, 1],
+    targets: '.tech-ring',
+    rotate: '360deg',
+    duration: 8000,
+    loop: true,
+    easing: 'linear'
+  });
+  
+  anime({
+    targets: '.tech-ring-inner',
+    rotate: '-360deg',
+    duration: 12000,
+    loop: true,
+    easing: 'linear'
+  });
+  
+  // Rotating node rings
+  anime({
+    targets: '.rotating-ring',
+    rotate: '360deg',
+    duration: 6000,
+    loop: true,
+    easing: 'linear',
+    delay: anime.stagger(1000)
+  });
+  
+  // Pulsing central hub with tech effect
+  anime({
+    targets: '#central-hub circle[fill="url(#hubGradient)"]',
+    scale: [1, 1.08, 1],
     duration: 3000,
-    delay: anime.stagger(500),
     loop: true,
     easing: 'easeInOutSine'
   });
   
-  // Pulsing central hub
+  // Data packet flow animation
   anime({
-    targets: '#central-hub circle',
-    scale: [1, 1.05, 1],
+    targets: '.data-packet',
+    translateY: [0, -8, 0],
+    translateX: [0, 4, 0],
+    scale: [1, 1.4, 1],
+    opacity: [0.8, 0.3, 0.8],
     duration: 2000,
-    loop: true,
-    easing: 'easeInOutSine'
-  });
-  
-  // Data flow animation
-  anime({
-    targets: '.flow-dot',
-    translateY: [0, -5, 0],
-    scale: [1, 1.3, 1],
-    opacity: [1, 0.5, 1],
-    duration: 1500,
-    delay: anime.stagger(300),
+    delay: anime.stagger(400),
     loop: true,
     easing: 'easeInOutQuad'
   });
   
-  // Solution nodes hover effect simulation
+  // Holographic element floating
+  anime({
+    targets: '.holo-triangle',
+    translateY: [0, -12, 0],
+    rotate: [0, 180, 360],
+    opacity: [0.3, 0.6, 0.3],
+    duration: 4000,
+    delay: anime.stagger(800),
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+  
+  anime({
+    targets: '.holo-square',
+    translateX: [0, 8, 0],
+    scale: [1, 1.3, 1],
+    opacity: [0.3, 0.7, 0.3],
+    duration: 3500,
+    delay: anime.stagger(600),
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+  
+  anime({
+    targets: '.holo-circle',
+    scale: [1, 1.5, 1],
+    opacity: [0.3, 0.8, 0.3],
+    duration: 2800,
+    delay: anime.stagger(700),
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+  
+  // Neural pulse activity
+  anime({
+    targets: '.neural-pulse',
+    scale: [1, 3, 1],
+    opacity: [0.4, 0, 0.4],
+    duration: 2000,
+    delay: anime.stagger(500, {start: 1000}),
+    loop: true,
+    easing: 'easeOutQuart'
+  });
+  
+  // Solution node glow effects
+  anime({
+    targets: '.solution-node circle[filter="url(#glow)"]',
+    scale: [1, 1.05, 1],
+    duration: 2500,
+    delay: anime.stagger(300),
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+  
+  // Random tech glitches
   setInterval(() => {
-    const nodes = ['.solution-node'];
-    const randomNode = nodes[0];
+    const elements = ['.data-packet', '.holo-triangle', '.neural-pulse'];
+    const randomElement = elements[Math.floor(Math.random() * elements.length)];
     anime({
-      targets: randomNode + ':nth-child(' + (Math.floor(Math.random() * 5) + 1) + ') circle',
-      scale: [1, 1.1, 1],
-      duration: 800,
+      targets: randomElement,
+      opacity: [null, 1, null],
+      scale: [null, 1.2, null],
+      duration: 200,
       easing: 'easeInOutQuad'
     });
-  }, 3000);
+  }, 5000);
+  
+  // Interactive hover effect for solution nodes
+  document.querySelectorAll('.solution-node').forEach(node => {
+    node.addEventListener('mouseenter', () => {
+      anime({
+        targets: node.querySelector('circle[filter="url(#glow)"]'),
+        scale: [1, 1.15],
+        duration: 300,
+        easing: 'easeOutQuad'
+      });
+    });
+    
+    node.addEventListener('mouseleave', () => {
+      anime({
+        targets: node.querySelector('circle[filter="url(#glow)"]'),
+        scale: [1.15, 1],
+        duration: 300,
+        easing: 'easeOutQuad'
+      });
+    });
+  });
 });
 </script>
 
@@ -376,16 +563,84 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* SVG Styles */
 .ecosystem-svg {
-  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 15px 35px rgba(67, 97, 238, 0.15));
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(67, 97, 238, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
+  border-radius: 20px;
 }
 
 .solution-node {
   cursor: pointer;
   transition: all 0.3s ease;
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
 }
 
 .solution-node:hover {
-  filter: brightness(1.1);
+  filter: drop-shadow(0 8px 25px rgba(67, 97, 238, 0.3)) brightness(1.1);
+}
+
+/* Futuristic grid effect */
+.ecosystem-svg rect[fill="url(#grid)"] {
+  transition: opacity 0.3s ease;
+}
+
+/* Glowing tech elements */
+.tech-ring, .tech-ring-inner {
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+}
+
+.rotating-ring {
+  filter: drop-shadow(0 0 3px rgba(255,255,255,0.5));
+}
+
+/* Neural network aesthetics */
+.data-packet {
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+.neural-pulse {
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+}
+
+/* Holographic UI elements */
+.holo-triangle, .holo-square, .holo-circle, .holo-bar {
+  filter: drop-shadow(0 0 5px currentColor);
+  transition: all 0.3s ease;
+}
+
+/* Connection line tech styling */
+.connection {
+  filter: drop-shadow(0 0 3px currentColor);
+  transition: all 0.3s ease;
+}
+
+.main-connection {
+  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.6));
+}
+
+/* Central hub tech enhancement */
+#central-hub .hub-outline {
+  filter: drop-shadow(0 0 10px rgba(67, 97, 238, 0.4));
+  animation: hexPulse 4s ease-in-out infinite;
+}
+
+@keyframes hexPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.02); }
+}
+
+/* AI indicators */
+.solution-node text {
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.3));
+}
+
+/* Responsive futuristic styling */
+@media (max-width: 991.98px) {
+  .ecosystem-svg {
+    background-size: 150% 150%;
+    filter: drop-shadow(0 10px 20px rgba(67, 97, 238, 0.1));
+  }
 }
 
 /* Background Decorations */
