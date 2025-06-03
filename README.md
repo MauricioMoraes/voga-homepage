@@ -252,9 +252,13 @@ O projeto está configurado para deploy automático usando Google Cloud Build + 
 1. **Configuração inicial** (uma vez):
    ```bash
    # Configure o projeto no Google Cloud
-   gcloud config set project voga-adv
+   gcloud config set project cj-marketing-228913
    
-   # Conecte o repositório ao Cloud Build
+   # Conecte o repositório ao Cloud Build (via Console)
+   # Visite: https://console.cloud.google.com/cloud-build/triggers
+   # Conecte o repositório GitHub MauricioMoraes/voga-homepage
+   
+   # Crie o trigger automaticamente
    gcloud builds triggers create github \
      --repo-name=voga-homepage \
      --repo-owner=MauricioMoraes \

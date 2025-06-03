@@ -20,14 +20,14 @@ steps:
 
   # Deploy to Firebase Hosting
   - name: 'gcr.io/cloud-builders/firebase'
-    args: ['deploy', '--project=${PROJECT_ID}']
+    args: ['deploy', '--project=cj-marketing-228913', '--only=hosting:vogaadv']
 
 # Specify timeout
 timeout: '1200s'
 
 # Define substitutions
 substitutions:
-  _FIREBASE_PROJECT_ID: 'voga-adv'
+  _FIREBASE_PROJECT_ID: 'cj-marketing-228913'
 
 options:
   logging: CLOUD_LOGGING_ONLY
