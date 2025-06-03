@@ -51,7 +51,7 @@ O site da Voga foi desenvolvido com foco em:
 - **Font Awesome**: Biblioteca de ícones
 - **JavaScript**: Animações e interatividade
 - **Docker**: Containerização para desenvolvimento consistente
-- **Vercel**: Plataforma de deploy e hospedagem
+- **Firebase Hosting**: Plataforma de deploy e hospedagem
 
 ## 📋 Requisitos
 
@@ -162,7 +162,7 @@ voga-homepage/
 ├── Gemfile              # Dependências Ruby
 ├── docker-compose.yml   # Configuração do Docker Compose
 ├── Dockerfile           # Configuração do Docker
-└── vercel.json          # Configuração para deploy no Vercel
+└── firebase.json        # Configuração para deploy no Firebase
 ```
 
 ## 🎨 Personalização e Desenvolvimento
@@ -238,9 +238,9 @@ Para modificar cores, fontes e outros aspectos visuais:
 
 ## 🚀 Implantação
 
-### Deploy no Vercel (Recomendado)
+### Deploy no Firebase Hosting (Automático)
 
-O projeto está configurado para deploy automático no Vercel:
+O projeto está configurado para deploy automático no Firebase Hosting:
 
 1. **Faça push para o repositório**:
    ```bash
@@ -249,9 +249,10 @@ O projeto está configurado para deploy automático no Vercel:
    git push origin master
    ```
 
-2. **Configure o projeto no Vercel**:
-   - Vincule o repositório ao Vercel
-   - Configure o domínio personalizado (voga.adv.br)
+2. **Deploy automático**:
+   - O deploy é automático via Firebase Hosting
+   - Site disponível em voga.adv.br
+   - Build automático do Jekyll
 
 ### Deploy Manual
 

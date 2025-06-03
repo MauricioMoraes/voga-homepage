@@ -74,6 +74,5 @@ exclude:
   - .node-version
   - spec
   - Rakefile
-  - vercel.json
   - docs/
   - .env
